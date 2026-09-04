@@ -1,0 +1,19 @@
+/* Admin Painel - keyframe 2 gifs */
+.gif-anim { position: relative; }
+.gif-layer { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.gif-inicio { animation: crossfadeInicio 3s ease-in-out infinite; }
+.gif-fim { animation: crossfadeFim 3s ease-in-out infinite; }
+
+@keyframes crossfadeInicio {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes crossfadeFim {
+  0%, 45% { opacity: 0; }
+  50%, 95% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.gif-preview:hover .gif-inicio { animation-play-state: paused; opacity: 1; }
+.gif-preview:hover .gif-fim { animation-play-state: paused; opacity: 0; }
+.filtro-btn.active { background: #059669; color: white; }

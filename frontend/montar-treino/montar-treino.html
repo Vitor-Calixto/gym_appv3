@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniSystem - Montar Treino</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="montar-treino.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen">
+  <nav class="sticky top-0 z-30 bg-zinc-950/90 backdrop-blur border-b border-zinc-800">
+    <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../home/home.html" class="text-emerald-500 font-black">CALIXTO<span class="text-zinc-500 font-normal text-xs ml-1">OMNI</span></a>
+      <a href="../home/home.html" class="text-xs bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg">← Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="max-w-3xl mx-auto px-4 py-4 space-y-4">
+    <!-- Config ficha -->
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 space-y-3">
+      <input id="nome-treino" placeholder="Nome do treino (ex: Treino A - Peito)" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+      <select id="aluno-select" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2.5 text-sm"><option value="">📦 Template (sem aluno)</option></select>
+      <div class="flex gap-2">
+        <input id="busca" placeholder="Buscar exercícios..." class="flex-1 bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+        <select id="filtro-grupo" class="bg-zinc-950 border border-zinc-800 rounded-xl px-3 py-2.5 text-sm">
+          <option value="">Todos grupos</option><option>PEITO</option><option>COSTAS</option><option>OMBROS</option><option>BICEPS</option><option>TRICEPS</option><option>ABDOMEN</option><option>PERNAS</option><option>QUADRICEPS</option><option>POSTERIOR</option><option>GLUTEO</option><option>PANTURRILHA</option><option>BRACOS</option>
+        </select>
+      </div>
+      <div class="flex justify-between items-center text-xs">
+        <span id="ficha-count" class="text-emerald-400">0 exercícios selecionados</span>
+        <button id="btn-limpar" class="text-zinc-500 hover:text-zinc-300">Limpar filtros</button>
+      </div>
+      <button id="btn-salvar-treino" class="w-full bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold py-3 rounded-xl text-sm">Salvar Treino</button>
+    </div>
+
+    <div id="grid-exercicios" class="space-y-2"></div>
+  </div>
+
+  <!-- Modal Calixto dark -->
+  <div id="modal-exercicio" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-sm overflow-hidden">
+      <div class="p-4 border-b border-zinc-800 flex justify-between items-start">
+        <div>
+          <h3 id="modal-titulo" class="font-bold text-white">Exercício</h3>
+          <span id="modal-grupo" class="inline-block mt-1 bg-zinc-800 text-zinc-400 text-xs px-2 py-0.5 rounded-full">Grupo</span>
+        </div>
+        <button onclick="fecharModal()" class="text-zinc-500 hover:text-white text-xl px-2">&times;</button>
+      </div>
+      <div class="bg-black p-2">
+        <div class="gif-anim relative h-64 bg-zinc-950 rounded-xl overflow-hidden flex items-center justify-center">
+          <img id="modal-gif-inicio" class="gif-layer gif-inicio w-full h-full object-contain">
+          <img id="modal-gif-fim" class="gif-layer gif-fim w-full h-full object-contain absolute inset-0">
+          <p id="gif-aviso" class="hidden absolute bottom-2 text-xs bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">GIF indisponível - edite no Admin</p>
+        </div>
+      </div>
+      <div class="p-4 space-y-3">
+        <div class="grid grid-cols-3 gap-2">
+          <div><label class="text-xs text-zinc-500">Séries</label><input id="modal-series" type="number" value="3" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-2 py-2 text-center text-sm"></div>
+          <div><label class="text-xs text-zinc-500">Reps</label><input id="modal-reps" value="12" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-2 py-2 text-center text-sm"></div>
+          <div><label class="text-xs text-zinc-500">Pausa (s)</label><input id="modal-descanso" type="number" value="60" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-2 py-2 text-center text-sm"></div>
+        </div>
+        <input id="modal-obs" placeholder="Observações" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+        <button onclick="salvarDoModal()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold py-3 rounded-xl text-sm">Personalizar e Adicionar</button>
+        <button onclick="fecharModal()" class="w-full bg-zinc-800 hover:bg-zinc-700 py-3 rounded-xl text-sm">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="montar-treino.js"></script>
+</body>
+</html>

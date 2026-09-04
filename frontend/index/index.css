@@ -1,0 +1,13 @@
+@import url('../css/global.css');
+
+/* Efeito de clique sutil no botão principal do login */
+#form-login button:active {
+  transform: scale(0.98);
+}
+
+/* Brilho no contorno do card de login ao interagir com o form */
+.max-w-md:focus-within {
+  box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.1);
+  border-color: #27272a;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,6 @@
+/* Estilos específicos para frequencia */
+@import url('../css/global.css');
+
+#btn-checkin:active {
+  transform: scale(0.95);
+}

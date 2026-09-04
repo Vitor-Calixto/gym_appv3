@@ -1,0 +1,8 @@
+/* Estilos específicos para esqueci-senha */
+@import url('../css/global.css');
+
+.max-w-md:focus-within {
+  box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.05);
+  border-color: #27272a;
+  transition: all 0.3s ease;
+}

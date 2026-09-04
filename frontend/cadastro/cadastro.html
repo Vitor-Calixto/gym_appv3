@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calixto OmniSystem - Cadastro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="cadastro.css">
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-md bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-xl">
+    <div class="text-center mb-6">
+      <h1 class="text-2xl font-bold text-emerald-500">Criar Conta</h1>
+      <p class="text-sm text-zinc-400 mt-1">Calixto OmniSystem</p>
+    </div>
+
+    <form id="form-cadastro" class="space-y-4">
+      <div>
+        <label class="block text-xs font-medium text-zinc-400 mb-1">Nome completo</label>
+        <input id="nome" type="text" required placeholder="Vitor Calixto" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+      </div>
+      <div>
+        <label class="block text-xs font-medium text-zinc-400 mb-1">E-mail</label>
+        <input id="email" type="email" required placeholder="seu@email.com" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+      </div>
+      <div>
+        <label class="block text-xs font-medium text-zinc-400 mb-1">Senha</label>
+        <input id="senha" type="password" required placeholder="••••••••" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+      </div>
+      <div>
+        <label class="block text-xs font-medium text-zinc-400 mb-1">Perfil</label>
+        <select id="role" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+          <option value="ALUNO">Aluno</option>
+          <option value="PROFESSOR">Professor</option>
+        </select>
+        <p class="text-[11px] text-zinc-500 mt-1">Master Admin é restrito ao Vitor Calixto (via seed).</p>
+      </div>
+      <div id="erro" class="hidden bg-red-500/10 border border-red-500/20 text-red-400 text-sm p-3 rounded-lg"></div>
+      <button type="submit" id="btn-cadastrar" class="w-full bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold py-2.5 rounded-lg transition">Cadastrar</button>
+    </form>
+
+    <p class="text-center text-sm text-zinc-500 mt-6">
+      Já tem conta? <a href="../index/index.html" class="text-emerald-400 hover:text-emerald-300">Fazer login</a>
+    </p>
+  </div>
+  <script type="module" src="cadastro.js"></script>
+</body>
+</html>

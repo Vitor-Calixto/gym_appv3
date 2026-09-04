@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniSystem - Frequência</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="frequencia.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen p-6 fade-in">
+  <div class="max-w-3xl mx-auto space-y-6">
+    <header class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 flex justify-between items-center">
+      <div>
+        <h1 class="text-xl font-bold text-emerald-500">Sua Frequência</h1>
+        <p class="text-sm text-zinc-400">Controle de consistência</p>
+      </div>
+      <button id="btn-checkin" class="bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-emerald-500/20">Fazer Check-in Hoje</button>
+    </header>
+
+    <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+      <h2 class="font-bold text-zinc-200 mb-4">Últimos Registros</h2>
+      <ul id="lista-frequencia" class="space-y-2">
+        <!-- Renderizado via JS -->
+      </ul>
+    </div>
+    
+    <a href="../home/home.html" class="inline-block text-sm text-zinc-500 hover:text-emerald-400">&larr; Voltar ao Início</a>
+  </div>
+  <script type="module" src="frequencia.js"></script>
+</body>
+</html>

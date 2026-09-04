@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniSystem - Admin Painel | Gestão de Exercícios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="admin-painel.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen">
+  <header class="sticky top-0 z-40 bg-zinc-950/80 backdrop-blur border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-xl font-bold text-emerald-500">Admin Painel • Exercícios Globais</h1>
+        <p class="text-xs text-zinc-500"><span id="total-count">330</span> exercícios • 11 grupos • 2 gifs por exercício + keyframe</p>
+      </div>
+      <div class="flex gap-2">
+        <a href="../home/home.html" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 px-4 py-2 rounded-lg text-xs">Home</a>
+        <button id="btn-recarregar" class="bg-emerald-600 hover:bg-emerald-500 px-4 py-2 rounded-lg text-xs font-bold">Recarregar</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-6 py-6 space-y-4">
+    <!-- Filtros -->
+    <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-3">
+      <div class="flex flex-wrap gap-2" id="filtros-grupo">
+        <button data-grupo="" class="filtro-btn active bg-emerald-600 text-white px-3 py-1.5 rounded-full text-xs font-medium">Todos</button>
+        <button data-grupo="PEITO" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">PEITO</button>
+        <button data-grupo="COSTAS" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">COSTAS</button>
+        <button data-grupo="OMBROS" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">OMBROS</button>
+        <button data-grupo="BICEPS" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">BÍCEPS</button>
+        <button data-grupo="TRICEPS" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">TRÍCEPS</button>
+        <button data-grupo="QUADRICEPS" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">QUADRÍCEPS</button>
+        <button data-grupo="POSTERIOR" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">POSTERIOR</button>
+        <button data-grupo="GLUTEO" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">GLÚTEO</button>
+        <button data-grupo="ABDOMEN" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">ABDÔMEN</button>
+        <button data-grupo="PANTURRILHA" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">PANTURRILHA</button>
+        <button data-grupo="FULL_BODY" class="filtro-btn bg-zinc-800 text-zinc-400 px-3 py-1.5 rounded-full text-xs">FULL BODY</button>
+      </div>
+      <div class="flex gap-2">
+        <input id="busca" placeholder="Buscar por nome..." class="flex-1 bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-500">
+        <select id="filtro-nivel" class="bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+          <option value="">Todos níveis</option>
+          <option value="INICIANTE">Iniciante</option>
+          <option value="INTERMEDIARIO">Intermediário</option>
+          <option value="AVANCADO">Avançado</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="grid-exercicios" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <!-- Cards injetados via JS -->
+    </div>
+    <p id="vazio" class="hidden text-center text-zinc-500 text-sm py-10">Nenhum exercício encontrado.</p>
+  </div>
+
+  <!-- Modal Edição -->
+  <div id="modal-editar" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl">
+      <div class="p-4 border-b border-zinc-800 flex justify-between items-center">
+        <h3 class="font-bold text-sm">Editar Exercício</h3>
+        <button onclick="fecharModal()" class="text-zinc-500 hover:text-white text-xl px-2">&times;</button>
+      </div>
+      <form id="form-editar" class="p-4 space-y-3 max-h-[80vh] overflow-y-auto">
+        <input type="hidden" id="edit-id">
+        <div>
+          <label class="text-xs text-zinc-400">Nome</label>
+          <input id="edit-nome" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="text-xs text-zinc-400">Grupo</label>
+            <select id="edit-grupo" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+              <option>PEITO</option><option>COSTAS</option><option>OMBROS</option><option>BICEPS</option><option>TRICEPS</option><option>QUADRICEPS</option><option>POSTERIOR</option><option>GLUTEO</option><option>ABDOMEN</option><option>PANTURRILHA</option><option>FULL_BODY</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-xs text-zinc-400">Nível</label>
+            <select id="edit-nivel" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm"><option>INICIANTE</option><option>INTERMEDIARIO</option><option>AVANCADO</option></select>
+          </div>
+        </div>
+        <div>
+          <label class="text-xs text-zinc-400">Descrição</label>
+          <textarea id="edit-desc" rows="2" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm"></textarea>
+        </div>
+        <!-- Preview Keyframe -->
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs text-zinc-400">GIF Início</label>
+            <div class="gif-preview gif-anim w-full h-32 bg-black rounded-lg overflow-hidden border border-zinc-800 relative">
+              <img id="preview-inicio" class="gif-layer gif-inicio w-full h-full object-contain">
+              <img id="preview-fim" class="gif-layer gif-fim w-full h-full object-contain absolute inset-0">
+            </div>
+            <input id="edit-gifInicio" placeholder="https://..." class="w-full mt-1 bg-zinc-950 border border-zinc-800 rounded px-2 py-1 text-xs">
+            <input type="file" id="file-inicio" accept="image/gif,image/*" class="w-full mt-1 text-xs">
+          </div>
+          <div>
+            <label class="text-xs text-zinc-400">GIF Fim</label>
+            <div class="gif-preview w-full h-32 bg-black rounded-lg overflow-hidden border border-zinc-800 relative">
+              <img id="preview-fim2" class="w-full h-full object-contain">
+            </div>
+            <input id="edit-gifFim" placeholder="https://..." class="w-full mt-1 bg-zinc-950 border border-zinc-800 rounded px-2 py-1 text-xs">
+            <input type="file" id="file-fim" accept="image/gif,image/*" class="w-full mt-1 text-xs">
+          </div>
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-500 py-2.5 rounded-xl text-sm font-bold">Salvar</button>
+          <button type="button" onclick="fecharModal()" class="flex-1 bg-zinc-800 hover:bg-zinc-700 py-2.5 rounded-xl text-sm">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="admin-painel.js"></script>
+</body>
+</html>

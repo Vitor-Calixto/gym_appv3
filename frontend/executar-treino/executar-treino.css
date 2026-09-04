@@ -1,0 +1,24 @@
+/* Estilos específicos para executar-treino */
+@import url('../css/global.css');
+
+/* Comportamento dos botões de série durante o clique e pós-clique */
+.btn-serie {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-serie:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.btn-serie:disabled {
+  cursor: not-allowed;
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+/* Garante que o cronômetro tenha largura fixa para não tremer a tela quando os números mudam */
+#cronometro {
+  min-width: 90px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,109 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  PROFESSOR
+  ALUNO
+}
+
+model Usuario {
+  id                String    @id @default(uuid())
+  nome              String
+  email             String    @unique
+  senha             String
+  role              Role      @default(ALUNO)
+  professorId       String?
+  professor         Usuario?  @relation("ProfessorAluno", fields: [professorId], references: [id])
+  alunos            Usuario[] @relation("ProfessorAluno")
+  treinos           Treino[]
+  anamnese          Anamnese?
+  faturas           Fatura[]
+  agendasProfessor  Agenda[]  @relation("AgendaProfessor")
+  agendasAluno      Agenda[]  @relation("AgendaAluno")
+  telefone          String?
+  resetToken        String?
+  resetTokenExpires DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+}
+
+model Exercicio {
+  id            String       @id @default(uuid())
+  nome          String       @unique
+  grupoMuscular String
+  descricao     String?
+  equipamento   String?
+  nivel         String?
+  categoria     String?
+  gifUrl        String?      // legado - manter compat
+  gifInicioUrl  String?
+  gifFimUrl     String?
+  ativo         Boolean      @default(true)
+  itensTreino   ItemTreino[]
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+}
+
+model Treino {
+  id          String       @id @default(uuid())
+  nome        String
+  descricao   String?
+  alunoId     String?      // opcional - null = template pré-montado
+  aluno       Usuario?     @relation(fields: [alunoId], references: [id])
+  professorId String?      // quem criou
+  isTemplate  Boolean      @default(false)
+  itens       ItemTreino[]
+  createdAt   DateTime     @default(now())
+}
+
+model ItemTreino {
+  id          String    @id @default(uuid())
+  treinoId    String
+  exercicioId String
+  series      Int
+  repeticoes  String
+  descansoSeg Int
+  observacoes String?
+  treino      Treino    @relation(fields: [treinoId], references: [id])
+  exercicio   Exercicio @relation(fields: [exercicioId], references: [id])
+}
+
+model Anamnese {
+  id        String   @id @default(uuid())
+  alunoId   String   @unique
+  aluno     Usuario  @relation(fields: [alunoId], references: [id])
+  respostas Json
+  createdAt DateTime @default(now())
+}
+
+model Fatura {
+  id            String   @id @default(uuid())
+  alunoId       String
+  aluno         Usuario  @relation(fields: [alunoId], references: [id])
+  mercadoPagoId String?  @unique
+  valor         Float
+  plano         String
+  status        String
+  createdAt     DateTime @default(now())
+}
+
+model Agenda {
+  id          String   @id @default(uuid())
+  professorId String
+  alunoId     String?
+  titulo      String
+  tipo        String   // AVALIACAO, CONSULTORIA, TREINO
+  data        DateTime
+  duracaoMin  Int      @default(60)
+  status      String   @default("AGENDADO") // AGENDADO, CONCLUIDO, CANCELADO
+  professor   Usuario  @relation("AgendaProfessor", fields: [professorId], references: [id])
+  aluno       Usuario? @relation("AgendaAluno", fields: [alunoId], references: [id])
+  createdAt   DateTime @default(now())
+}

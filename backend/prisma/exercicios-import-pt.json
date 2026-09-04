@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "3_4_Sit-Up",
+    "nome": "Abdominal 3/4",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/3_4_Sit-Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/3_4_Sit-Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "90_90_Hamstring",
+    "nome": "90/90 Isquiotibiais",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/90_90_Hamstring/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/90_90_Hamstring/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Ab_Crunch_Machine",
+    "nome": "Ab Abdominal Máquina",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Ab_Roller",
+    "nome": "Ab Roller",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Adductor",
+    "nome": "Adutor",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Adductor_Groin",
+    "nome": "Adutor/Virilha",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor_Groin/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Adductor_Groin/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Advanced_Kettlebell_Windmill",
+    "nome": "Advanced Kettlebell Moinho",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Advanced_Kettlebell_Windmill/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Advanced_Kettlebell_Windmill/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Air_Bike",
+    "nome": "Bicicleta no Ar",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Air_Bike/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Air_Bike/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "All_Fours_Quad_Stretch",
+    "nome": "All Fours Alongamento de Quadríceps",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/All_Fours_Quad_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/All_Fours_Quad_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternate_Hammer_Curl",
+    "nome": "Alternado Rosca Martelo",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Hammer_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Hammer_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternate_Heel_Touchers",
+    "nome": "Alternado Toques nos Calcanhares",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Heel_Touchers/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Heel_Touchers/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternate_Incline_Dumbbell_Curl",
+    "nome": "Alternado Rosca com Halteres Inclinado",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Incline_Dumbbell_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Incline_Dumbbell_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternate_Leg_Diagonal_Bound",
+    "nome": "Alternado Perna Salto Diagonal",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Leg_Diagonal_Bound/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternate_Leg_Diagonal_Bound/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Cable_Shoulder_Press",
+    "nome": "Alternado Desenvolvimento na Polia",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Cable_Shoulder_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Deltoid_Raise",
+    "nome": "Alternado Elevação de Deltoidee",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Deltoid_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Deltoid_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Floor_Press",
+    "nome": "Alternado Supino no Chão",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Floor_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Floor_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Hang_Clean",
+    "nome": "Alternado Arranque Suspenso",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Hang_Clean/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Hang_Clean/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Kettlebell_Press",
+    "nome": "Alternado Desenvolvimento com Kettlebell",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Kettlebell_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Kettlebell_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Kettlebell_Row",
+    "nome": "Alternado Remada com Kettlebell",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Kettlebell_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Kettlebell_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Alternating_Renegade_Row",
+    "nome": "Alternado Remada Renegada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Renegade_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Alternating_Renegade_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Ankle_Circles",
+    "nome": "Circunducão de Tornozelo",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_Circles/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_Circles/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Ankle_On_The_Knee",
+    "nome": "Ankle On The Knee",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_On_The_Knee/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ankle_On_The_Knee/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Anterior_Tibialis-SMR",
+    "nome": "Anterior Tibialis-SMR",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anterior_Tibialis-SMR/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anterior_Tibialis-SMR/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Anti-Gravity_Press",
+    "nome": "Anti-Gravity Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anti-Gravity_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Anti-Gravity_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Arm_Circles",
+    "nome": "Braço Circles",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arm_Circles/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arm_Circles/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Arnold_Dumbbell_Press",
+    "nome": "Arnold Halter Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arnold_Dumbbell_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Arnold_Dumbbell_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Around_The_Worlds",
+    "nome": "Around The Worlds",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Around_The_Worlds/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Around_The_Worlds/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Atlas_Stone_Trainer",
+    "nome": "Atlas Stone Trainer",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Atlas_Stone_Trainer/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Atlas_Stone_Trainer/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Atlas_Stones",
+    "nome": "Atlas Stones",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Atlas_Stones/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Atlas_Stones/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Axle_Deadlift",
+    "nome": "Axle Levantamento Terra",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Axle_Deadlift/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Back_Flyes_-_With_Bands",
+    "nome": "Costas Crucifixoes - With Bands",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Back_Flyes_-_With_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Back_Flyes_-_With_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Backward_Drag",
+    "nome": "Costasward Drag",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Backward_Drag/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Backward_Drag/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Backward_Medicine_Ball_Throw",
+    "nome": "Costasward Medicine Ball ThRemada",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Backward_Medicine_Ball_Throw/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Backward_Medicine_Ball_Throw/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Balance_Board",
+    "nome": "Balance Board",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Balance_Board/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Ball_Leg_Curl",
+    "nome": "Ball Perna Rosca",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ball_Leg_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Band_Assisted_Pull-Up",
+    "nome": "Band Assisted Barra Fixa",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Assisted_Pull-Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Band_Good_Morning",
+    "nome": "Band Good Morning",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Band_Good_Morning_Pull_Through",
+    "nome": "Band Good Morning (Pull Through)",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning_Pull_Through/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Good_Morning_Pull_Through/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Band_Hip_Adductions",
+    "nome": "Band Hip Adductions",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Hip_Adductions/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Band_Pull_Apart",
+    "nome": "Band Pull Apart",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Band_Skull_Crusher",
+    "nome": "Band Skull Crusher",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Ab_Rollout",
+    "nome": "Barra Ab Rollout",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Ab_Rollout_-_On_Knees",
+    "nome": "Barra Ab Rollout - On Knees",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout_-_On_Knees/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Ab_Rollout_-_On_Knees/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Bench_Press_-_Medium_Grip",
+    "nome": "Barra Banco Desenvolvimento - Medium Grip",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Curl",
+    "nome": "Barra Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Curls_Lying_Against_An_Incline",
+    "nome": "Barra Roscas Deitado Against An Inclinado",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curls_Lying_Against_An_Incline/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Curls_Lying_Against_An_Incline/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Deadlift",
+    "nome": "Barra Levantamento Terra",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Full_Squat",
+    "nome": "Barra Full Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Full_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Full_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Glute_Bridge",
+    "nome": "Barra Glúteo Bridge",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Guillotine_Bench_Press",
+    "nome": "Barra Guillotine Banco Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Guillotine_Bench_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Guillotine_Bench_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Hack_Squat",
+    "nome": "Barra Hack Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Hip_Thrust",
+    "nome": "Barra Hip Thrust",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+    "nome": "Barra Inclinado Banco Desenvolvimento - Medium Grip",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Bench_Press_-_Medium_Grip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Bench_Press_-_Medium_Grip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Incline_Shoulder_Raise",
+    "nome": "Barra Inclinado Ombro Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Shoulder_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Incline_Shoulder_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Lunge",
+    "nome": "Barra Avanço",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Lunge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Rear_Delt_Row",
+    "nome": "Barra Posterior Delt Remada",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Rollout_from_Bench",
+    "nome": "Barra Rollout from Banco",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rollout_from_Bench/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rollout_from_Bench/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Seated_Calf_Raise",
+    "nome": "Barra Sentado Panturrilha Elevação",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Shoulder_Press",
+    "nome": "Barra Ombro Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shoulder_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Shrug",
+    "nome": "Barra Shrug",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Shrug_Behind_The_Back",
+    "nome": "Barra Shrug Behind The Costas",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug_Behind_The_Back/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Shrug_Behind_The_Back/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Side_Bend",
+    "nome": "Barra Side Bend",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Bend/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Bend/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Side_Split_Squat",
+    "nome": "Barra Side Split Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Squat",
+    "nome": "Barra Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Squat_To_A_Bench",
+    "nome": "Barra Agachamento To A Banco",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat_To_A_Bench/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat_To_A_Bench/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Step_Ups",
+    "nome": "Barra Step Ups",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Step_Ups/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Barbell_Walking_Lunge",
+    "nome": "Barra Walking Avanço",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Battling_Ropes",
+    "nome": "Battling Ropes",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Battling_Ropes/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Battling_Ropes/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bear_Crawl_Sled_Drags",
+    "nome": "Bear Crawl Sled Drags",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bear_Crawl_Sled_Drags/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bear_Crawl_Sled_Drags/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Behind_Head_Chest_Stretch",
+    "nome": "Behind Head Peito Stretch",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Behind_Head_Chest_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Behind_Head_Chest_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bench_Dips",
+    "nome": "Banco Dips",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bench_Jump",
+    "nome": "Banco Jump",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Jump/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Jump/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bench_Press_-_Powerlifting",
+    "nome": "Banco Desenvolvimento - Powerlifting",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_Powerlifting/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_Powerlifting/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bench_Press_-_With_Bands",
+    "nome": "Banco Desenvolvimento - With Bands",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_With_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_-_With_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bench_Press_with_Chains",
+    "nome": "Banco Desenvolvimento with Chains",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_with_Chains/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Press_with_Chains/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bench_Sprint",
+    "nome": "Banco Sprint",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Sprint/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Sprint/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent-Arm_Barbell_Pullover",
+    "nome": "Bent-Braço Barra Pullover",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Barbell_Pullover/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Barbell_Pullover/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent-Arm_Dumbbell_Pullover",
+    "nome": "Bent-Braço Halter Pullover",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Dumbbell_Pullover/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Arm_Dumbbell_Pullover/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent-Knee_Hip_Raise",
+    "nome": "Bent-Knee Hip Elevação",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Knee_Hip_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent-Knee_Hip_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_Barbell_Row",
+    "nome": "Curvado Barra Remada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Barbell_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Barbell_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench",
+    "nome": "Curvado Halter Posterior Delt Elevação With Head On Banco",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_Low-Pulley_Side_Lateral",
+    "nome": "Curvado Low-Pulley Side Dorsaleral",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Low-Pulley_Side_Lateral/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Low-Pulley_Side_Lateral/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_One-Arm_Long_Bar_Row",
+    "nome": "Curvado One-Braço Long Bar Remada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_One-Arm_Long_Bar_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_One-Arm_Long_Bar_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_Two-Arm_Long_Bar_Row",
+    "nome": "Curvado Two-Braço Long Bar Remada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Two-Arm_Long_Bar_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Two-Arm_Long_Bar_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_Two-Dumbbell_Row",
+    "nome": "Curvado Two-Halter Remada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Two-Dumbbell_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Two-Dumbbell_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Over_Two-Dumbbell_Row_With_Palms_In",
+    "nome": "Curvado Two-Halter Remada With Palms In",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Two-Dumbbell_Row_With_Palms_In/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Over_Two-Dumbbell_Row_With_Palms_In/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bent_Press",
+    "nome": "Bent Desenvolvimento",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bent_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bicycling",
+    "nome": "Bicycling",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bicycling_Stationary",
+    "nome": "Bicycling, Stationary",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling_Stationary/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bicycling_Stationary/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Board_Press",
+    "nome": "Board Desenvolvimento",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Board_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Board_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Body-Up",
+    "nome": "Body-Up",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body-Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body-Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Body_Tricep_Press",
+    "nome": "Body Tricep Desenvolvimento",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body_Tricep_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Body_Tricep_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bodyweight_Flyes",
+    "nome": "Bodyweight Crucifixoes",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Flyes/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Flyes/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bodyweight_Mid_Row",
+    "nome": "Bodyweight Mid Remada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Mid_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Mid_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bodyweight_Squat",
+    "nome": "Bodyweight Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bodyweight_Walking_Lunge",
+    "nome": "Bodyweight Walking Avanço",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Walking_Lunge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bosu_Ball_Cable_Crunch_With_Side_Bends",
+    "nome": "Bosu Ball Polia Abdominal With Side Bends",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bosu_Ball_Cable_Crunch_With_Side_Bends/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bosu_Ball_Cable_Crunch_With_Side_Bends/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bottoms-Up_Clean_From_The_Hang_Position",
+    "nome": "Bottoms-Up Clean From The Hang Position",
+    "grupo_muscular": "BRACOS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms-Up_Clean_From_The_Hang_Position/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms-Up_Clean_From_The_Hang_Position/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bottoms_Up",
+    "nome": "Bottoms Up",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bottoms_Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Box_Jump_Multiple_Response",
+    "nome": "Box Jump (Multiple Response)",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Jump_Multiple_Response/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Box_Skip",
+    "nome": "Box Skip",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Skip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Skip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Box_Squat",
+    "nome": "Box Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Box_Squat_with_Bands",
+    "nome": "Box Agachamento with Bands",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Box_Squat_with_Chains",
+    "nome": "Box Agachamento with Chains",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Chains/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Box_Squat_with_Chains/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Brachialis-SMR",
+    "nome": "Brachialis-SMR",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Brachialis-SMR/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Brachialis-SMR/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Bradford_Rocky_Presses",
+    "nome": "Bradford/Rocky Desenvolvimentoes",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bradford_Rocky_Presses/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bradford_Rocky_Presses/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Butt-Ups",
+    "nome": "Butt-Ups",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butt-Ups/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butt-Ups/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Butt_Lift_Bridge",
+    "nome": "Butt Lift (Bridge)",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butt_Lift_Bridge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butt_Lift_Bridge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Butterfly",
+    "nome": "ButterCrucifixo",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Butterfly/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Chest_Press",
+    "nome": "Polia Peito Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Crossover",
+    "nome": "Polia Crossover",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crossover/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Crunch",
+    "nome": "Polia Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Deadlifts",
+    "nome": "Polia Levantamento Terras",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Deadlifts/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Deadlifts/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Hammer_Curls_-_Rope_Attachment",
+    "nome": "Polia Rosca Martelos - Rope Attachment",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hammer_Curls_-_Rope_Attachment/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hammer_Curls_-_Rope_Attachment/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Hip_Adduction",
+    "nome": "Polia Hip Adduction",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hip_Adduction/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hip_Adduction/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Incline_Pushdown",
+    "nome": "Polia Inclinado Pushdown",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Pushdown/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Incline_Triceps_Extension",
+    "nome": "Polia Inclinado Tríceps Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Triceps_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Incline_Triceps_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Internal_Rotation",
+    "nome": "Polia Internal Rotation",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Internal_Rotation/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Iron_Cross",
+    "nome": "Polia Iron Cross",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Iron_Cross/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Iron_Cross/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Judo_Flip",
+    "nome": "Polia Judo Flip",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Judo_Flip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Judo_Flip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Lying_Triceps_Extension",
+    "nome": "Polia Deitado Tríceps Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Lying_Triceps_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Lying_Triceps_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_One_Arm_Tricep_Extension",
+    "nome": "Polia One Braço Tricep Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_One_Arm_Tricep_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Preacher_Curl",
+    "nome": "Polia Preacher Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Preacher_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Preacher_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Rear_Delt_Fly",
+    "nome": "Polia Posterior Delt Crucifixo",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rear_Delt_Fly/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rear_Delt_Fly/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Reverse_Crunch",
+    "nome": "Polia Reverse Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Reverse_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Reverse_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Rope_Overhead_Triceps_Extension",
+    "nome": "Polia Rope Overhead Tríceps Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Overhead_Triceps_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Overhead_Triceps_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Rope_Rear-Delt_Rows",
+    "nome": "Polia Rope Posterior-Delt Remadas",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Rear-Delt_Rows/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Rope_Rear-Delt_Rows/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Russian_Twists",
+    "nome": "Polia Russian Twists",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Russian_Twists/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Russian_Twists/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Seated_Crunch",
+    "nome": "Polia Sentado Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Seated_Lateral_Raise",
+    "nome": "Polia Sentado Dorsaleral Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Shoulder_Press",
+    "nome": "Desenvolvimento na Polia",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Shoulder_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Shoulder_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Shrugs",
+    "nome": "Polia Shrugs",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Shrugs/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Shrugs/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cable_Wrist_Curl",
+    "nome": "Polia Wrist Rosca",
+    "grupo_muscular": "BRACOS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Wrist_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Wrist_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf-Machine_Shoulder_Shrug",
+    "nome": "Panturrilha-Máquina Ombro Shrug",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf-Machine_Shoulder_Shrug/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf-Machine_Shoulder_Shrug/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf_Press",
+    "nome": "Panturrilha Desenvolvimento",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf_Press_On_The_Leg_Press_Machine",
+    "nome": "Panturrilha Desenvolvimento On The Perna Desenvolvimento Máquina",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press_On_The_Leg_Press_Machine/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press_On_The_Leg_Press_Machine/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf_Raise_On_A_Dumbbell",
+    "nome": "Panturrilha Elevação On A Halter",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raise_On_A_Dumbbell/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raise_On_A_Dumbbell/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf_Raises_-_With_Bands",
+    "nome": "Panturrilha Elevaçãos - With Bands",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf_Stretch_Elbows_Against_Wall",
+    "nome": "Panturrilha Stretch Elbows Against Wall",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Stretch_Elbows_Against_Wall/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Stretch_Elbows_Against_Wall/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calf_Stretch_Hands_Against_Wall",
+    "nome": "Panturrilha Stretch Hands Against Wall",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Stretch_Hands_Against_Wall/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Stretch_Hands_Against_Wall/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Calves-SMR",
+    "nome": "Calves-SMR",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calves-SMR/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calves-SMR/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Car_Deadlift",
+    "nome": "Car Levantamento Terra",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Car_Deadlift/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Car_Deadlift/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Car_Drivers",
+    "nome": "Car Drivers",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Car_Drivers/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Car_Drivers/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Carioca_Quick_Step",
+    "nome": "Carioca Quick Step",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Carioca_Quick_Step/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Carioca_Quick_Step/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cat_Stretch",
+    "nome": "Cat Stretch",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cat_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cat_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Catch_and_Overhead_Throw",
+    "nome": "Catch and Overhead ThRemada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Catch_and_Overhead_Throw/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Catch_and_Overhead_Throw/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chain_Handle_Extension",
+    "nome": "Chain Handle Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Handle_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Handle_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chain_Press",
+    "nome": "Chain Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chain_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chair_Leg_Extended_Stretch",
+    "nome": "Chair Perna Extended Stretch",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Leg_Extended_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Leg_Extended_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chair_Lower_Back_Stretch",
+    "nome": "Chair Lower Costas Stretch",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Lower_Back_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Lower_Back_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chair_Squat",
+    "nome": "Chair Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chair_Upper_Body_Stretch",
+    "nome": "Chair Upper Body Stretch",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Upper_Body_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chair_Upper_Body_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chest_And_Front_Of_Shoulder_Stretch",
+    "nome": "Peito And Frontal Of Ombro Stretch",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_And_Front_Of_Shoulder_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_And_Front_Of_Shoulder_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chest_Push_from_3_point_stance",
+    "nome": "Peito Push from 3 point stance",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_from_3_point_stance/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_from_3_point_stance/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chest_Push_multiple_response",
+    "nome": "Peito Push (multiple response)",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_multiple_response/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_multiple_response/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chest_Push_single_response",
+    "nome": "Peito Push (single response)",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_single_response/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_single_response/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chest_Push_with_Run_Release",
+    "nome": "Peito Push with Run Release",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_with_Run_Release/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Push_with_Run_Release/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chest_Stretch_on_Stability_Ball",
+    "nome": "Peito Stretch on Stability Ball",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Stretch_on_Stability_Ball/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chest_Stretch_on_Stability_Ball/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Childs_Pose",
+    "nome": "Child's Pose",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Childs_Pose/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Childs_Pose/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chin-Up",
+    "nome": "Chin-Up",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Chin_To_Chest_Stretch",
+    "nome": "Chin To Peito Stretch",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin_To_Chest_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin_To_Chest_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Circus_Bell",
+    "nome": "Circus Bell",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Circus_Bell/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Circus_Bell/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean",
+    "nome": "Clean",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean_Deadlift",
+    "nome": "Clean Levantamento Terra",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Deadlift/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Deadlift/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean_Pull",
+    "nome": "Clean Pull",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Pull/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Pull/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean_Shrug",
+    "nome": "Clean Shrug",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Shrug/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_Shrug/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean_and_Jerk",
+    "nome": "Clean and Jerk",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Jerk/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Jerk/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean_and_Press",
+    "nome": "Clean and Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_and_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clean_from_Blocks",
+    "nome": "Clean from Blocks",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_from_Blocks/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean_from_Blocks/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Clock_Push-Up",
+    "nome": "Clock Flexão",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clock_Push-Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_Barbell_Bench_Press",
+    "nome": "Close-Grip Barra Banco Desenvolvimento",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Barbell_Bench_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Barbell_Bench_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_Dumbbell_Press",
+    "nome": "Close-Grip Halter Desenvolvimento",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Dumbbell_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Dumbbell_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_EZ-Bar_Curl_with_Band",
+    "nome": "Close-Grip EZ-Bar Rosca with Band",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_EZ-Bar_Curl_with_Band/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_EZ-Bar_Curl_with_Band/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_EZ-Bar_Press",
+    "nome": "Close-Grip EZ-Bar Desenvolvimento",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_EZ-Bar_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_EZ-Bar_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_EZ_Bar_Curl",
+    "nome": "Close-Grip EZ Bar Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_EZ_Bar_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_EZ_Bar_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_Front_Lat_Pulldown",
+    "nome": "Close-Grip Frontal Dorsal Pulldown",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_Push-Up_off_of_a_Dumbbell",
+    "nome": "Close-Grip Flexão off of a Halter",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Push-Up_off_of_a_Dumbbell/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Push-Up_off_of_a_Dumbbell/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Close-Grip_Standing_Barbell_Curl",
+    "nome": "Close-Grip Em Pé Barra Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Standing_Barbell_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Standing_Barbell_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cocoons",
+    "nome": "Cocoons",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cocoons/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cocoons/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Conans_Wheel",
+    "nome": "Conan's Wheel",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Conans_Wheel/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Conans_Wheel/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Concentration_Curls",
+    "nome": "Concentration Roscas",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Concentration_Curls/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Concentration_Curls/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cross-Body_Crunch",
+    "nome": "Cross-Body Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross-Body_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross-Body_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cross_Body_Hammer_Curl",
+    "nome": "Cross Body Rosca Martelo",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross_Body_Hammer_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross_Body_Hammer_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cross_Over_-_With_Bands",
+    "nome": "Cross Over - With Bands",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross_Over_-_With_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cross_Over_-_With_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Crossover_Reverse_Lunge",
+    "nome": "Crossover Reverse Avanço",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crossover_Reverse_Lunge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Crucifix",
+    "nome": "Crucifix",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crucifix/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crucifix/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Crunch_-_Hands_Overhead",
+    "nome": "Abdominal - Hands Overhead",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunch_-_Hands_Overhead/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunch_-_Hands_Overhead/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Crunch_-_Legs_On_Exercise_Ball",
+    "nome": "Abdominal - Pernas On Exercise Ball",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunch_-_Legs_On_Exercise_Ball/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunch_-_Legs_On_Exercise_Ball/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Crunches",
+    "nome": "Abdominales",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Cuban_Press",
+    "nome": "Cuban Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cuban_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cuban_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dancers_Stretch",
+    "nome": "Dancer's Stretch",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dancers_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dancers_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dead_Bug",
+    "nome": "Dead Bug",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Deadlift_with_Bands",
+    "nome": "Levantamento Terra with Bands",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deadlift_with_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deadlift_with_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Deadlift_with_Chains",
+    "nome": "Levantamento Terra with Chains",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deadlift_with_Chains/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deadlift_with_Chains/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Barbell_Bench_Press",
+    "nome": "Declinado Barra Banco Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Barbell_Bench_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Barbell_Bench_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Close-Grip_Bench_To_Skull_Crusher",
+    "nome": "Declinado Close-Grip Banco To Skull Crusher",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Close-Grip_Bench_To_Skull_Crusher/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Close-Grip_Bench_To_Skull_Crusher/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Crunch",
+    "nome": "Declinado Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Dumbbell_Bench_Press",
+    "nome": "Declinado Halter Banco Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Bench_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Bench_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Dumbbell_Flyes",
+    "nome": "Declinado Halter Crucifixoes",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Flyes/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Flyes/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Dumbbell_Triceps_Extension",
+    "nome": "Declinado Halter Tríceps Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Triceps_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Triceps_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_EZ_Bar_Triceps_Extension",
+    "nome": "Declinado EZ Bar Tríceps Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_EZ_Bar_Triceps_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_EZ_Bar_Triceps_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Oblique_Crunch",
+    "nome": "Declinado Oblique Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Oblique_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Oblique_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Push-Up",
+    "nome": "Declinado Flexão",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Push-Up/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Push-Up/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Reverse_Crunch",
+    "nome": "Declinado Reverse Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Reverse_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Reverse_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Decline_Smith_Press",
+    "nome": "Declinado Smith Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Smith_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Smith_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Deficit_Deadlift",
+    "nome": "Deficit Levantamento Terra",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deficit_Deadlift/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Deficit_Deadlift/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Depth_Jump_Leap",
+    "nome": "Depth Jump Leap",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Depth_Jump_Leap/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Depth_Jump_Leap/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dip_Machine",
+    "nome": "Dip Máquina",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dip_Machine/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dips_-_Chest_Version",
+    "nome": "Dips - Peito Version",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Chest_Version/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Chest_Version/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dips_-_Triceps_Version",
+    "nome": "Dips - Tríceps Version",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dips_-_Triceps_Version/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Donkey_Calf_Raises",
+    "nome": "Donkey Panturrilha Elevaçãos",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Donkey_Calf_Raises/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Donkey_Calf_Raises/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Double_Kettlebell_Alternating_Hang_Clean",
+    "nome": "Double Kettlebell Alternado Arranque Suspenso",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Alternating_Hang_Clean/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Alternating_Hang_Clean/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Double_Kettlebell_Jerk",
+    "nome": "Double Kettlebell Jerk",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Jerk/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Jerk/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Double_Kettlebell_Push_Press",
+    "nome": "Double Kettlebell Push Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Push_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Push_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Double_Kettlebell_Snatch",
+    "nome": "Double Kettlebell Snatch",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Snatch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Snatch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Double_Kettlebell_Windmill",
+    "nome": "Double Kettlebell Moinho",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Windmill/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Kettlebell_Windmill/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Double_Leg_Butt_Kick",
+    "nome": "Double Perna Butt Kick",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Leg_Butt_Kick/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Double_Leg_Butt_Kick/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Downward_Facing_Balance",
+    "nome": "Downward Facing Balance",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Downward_Facing_Balance/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Downward_Facing_Balance/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Drag_Curl",
+    "nome": "Drag Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Drag_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Drag_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Drop_Push",
+    "nome": "Drop Push",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Drop_Push/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Drop_Push/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Alternate_Bicep_Curl",
+    "nome": "Halter Alternado Bicep Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Alternate_Bicep_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Bench_Press",
+    "nome": "Halter Banco Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Bench_Press_with_Neutral_Grip",
+    "nome": "Halter Banco Desenvolvimento with Neutral Grip",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bench_Press_with_Neutral_Grip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Bicep_Curl",
+    "nome": "Halter Bicep Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Clean",
+    "nome": "Halter Clean",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Clean/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Clean/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Floor_Press",
+    "nome": "Halter Supino no Chão",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Floor_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Floor_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Flyes",
+    "nome": "Halter Crucifixoes",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Flyes/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Flyes/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Incline_Row",
+    "nome": "Halter Inclinado Remada",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Incline_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Incline_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Incline_Shoulder_Raise",
+    "nome": "Halter Inclinado Ombro Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Incline_Shoulder_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Incline_Shoulder_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Lunges",
+    "nome": "Halter Avanços",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lunges/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lunges/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Lying_One-Arm_Rear_Lateral_Raise",
+    "nome": "Halter Deitado One-Braço Posterior Dorsaleral Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_One-Arm_Rear_Lateral_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_One-Arm_Rear_Lateral_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Lying_Pronation",
+    "nome": "Halter Deitado Pronation",
+    "grupo_muscular": "BRACOS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_Pronation/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_Pronation/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Lying_Rear_Lateral_Raise",
+    "nome": "Halter Deitado Posterior Dorsaleral Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_Rear_Lateral_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_Rear_Lateral_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Lying_Supination",
+    "nome": "Halter Deitado Supination",
+    "grupo_muscular": "BRACOS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_Supination/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Lying_Supination/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_One-Arm_Shoulder_Press",
+    "nome": "Halter One-Braço Ombro Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_One-Arm_Shoulder_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_One-Arm_Shoulder_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_One-Arm_Triceps_Extension",
+    "nome": "Halter One-Braço Tríceps Extension",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_One-Arm_Triceps_Extension/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_One-Arm_Triceps_Extension/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_One-Arm_Upright_Row",
+    "nome": "Halter One-Braço Upright Remada",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_One-Arm_Upright_Row/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_One-Arm_Upright_Row/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Prone_Incline_Curl",
+    "nome": "Halter Prone Inclinado Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Prone_Incline_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Prone_Incline_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Raise",
+    "nome": "Halter Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Rear_Lunge",
+    "nome": "Halter Posterior Avanço",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Rear_Lunge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Rear_Lunge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Scaption",
+    "nome": "Halter Scaption",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Scaption/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Scaption/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Seated_Box_Jump",
+    "nome": "Halter Sentado Box Jump",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Seated_Box_Jump/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Seated_Box_Jump/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Seated_One-Leg_Calf_Raise",
+    "nome": "Halter Sentado One-Perna Panturrilha Elevação",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Seated_One-Leg_Calf_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Seated_One-Leg_Calf_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Shoulder_Press",
+    "nome": "Halter Ombro Desenvolvimento",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Shrug",
+    "nome": "Halter Shrug",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shrug/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shrug/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Side_Bend",
+    "nome": "Halter Side Bend",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Side_Bend/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Side_Bend/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Squat",
+    "nome": "Halter Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Squat_To_A_Bench",
+    "nome": "Halter Agachamento To A Banco",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat_To_A_Bench/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Squat_To_A_Bench/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Step_Ups",
+    "nome": "Halter Step Ups",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Step_Ups/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Step_Ups/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dumbbell_Tricep_Extension_-Pronated_Grip",
+    "nome": "Halter Tricep Extension -Pronated Grip",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Tricep_Extension_-Pronated_Grip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Tricep_Extension_-Pronated_Grip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dynamic_Back_Stretch",
+    "nome": "Dynamic Costas Stretch",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Back_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Back_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Dynamic_Chest_Stretch",
+    "nome": "Dynamic Peito Stretch",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Chest_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dynamic_Chest_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "EZ-Bar_Curl",
+    "nome": "EZ-Bar Rosca",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Curl/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "EZ-Bar_Skullcrusher",
+    "nome": "EZ-Bar Skullcrusher",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Skullcrusher/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/EZ-Bar_Skullcrusher/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Elbow_Circles",
+    "nome": "Elbow Circles",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elbow_Circles/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elbow_Circles/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Elbow_to_Knee",
+    "nome": "Elbow to Knee",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elbow_to_Knee/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elbow_to_Knee/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Elbows_Back",
+    "nome": "Elbows Costas",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elbows_Back/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elbows_Back/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Elevated_Back_Lunge",
+    "nome": "Elevated Costas Avanço",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elevated_Back_Lunge/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elevated_Back_Lunge/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Elevated_Cable_Rows",
+    "nome": "Elevated Polia Remadas",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elevated_Cable_Rows/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elevated_Cable_Rows/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Elliptical_Trainer",
+    "nome": "Elliptical Trainer",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elliptical_Trainer/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Elliptical_Trainer/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Exercise_Ball_Crunch",
+    "nome": "Exercise Ball Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Exercise_Ball_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Exercise_Ball_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Exercise_Ball_Pull-In",
+    "nome": "Exercise Ball Pull-In",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Exercise_Ball_Pull-In/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Exercise_Ball_Pull-In/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Extended_Range_One-Arm_Kettlebell_Floor_Press",
+    "nome": "Extended Range One-Braço Kettlebell Supino no Chão",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Extended_Range_One-Arm_Kettlebell_Floor_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Extended_Range_One-Arm_Kettlebell_Floor_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "External_Rotation",
+    "nome": "External Rotation",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "External_Rotation_with_Band",
+    "nome": "External Rotation with Band",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation_with_Band/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation_with_Band/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "External_Rotation_with_Cable",
+    "nome": "External Rotation with Polia",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation_with_Cable/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/External_Rotation_with_Cable/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Face_Pull",
+    "nome": "Face Pull",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Farmers_Walk",
+    "nome": "FBraçoer's Walk",
+    "grupo_muscular": "BRACOS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Farmers_Walk/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Farmers_Walk/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Fast_Skipping",
+    "nome": "Fast Skipping",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Fast_Skipping/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Fast_Skipping/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Finger_Curls",
+    "nome": "Finger Roscas",
+    "grupo_muscular": "BRACOS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Finger_Curls/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Finger_Curls/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Flat_Bench_Cable_Flyes",
+    "nome": "FDorsal Banco Polia Crucifixoes",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Cable_Flyes/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Cable_Flyes/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Flat_Bench_Leg_Pull-In",
+    "nome": "FDorsal Banco Perna Pull-In",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Leg_Pull-In/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Leg_Pull-In/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Flat_Bench_Lying_Leg_Raise",
+    "nome": "FDorsal Banco Deitado Perna Elevação",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flat_Bench_Lying_Leg_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Flexor_Incline_Dumbbell_Curls",
+    "nome": "Flexor Rosca com Halteres Inclinados",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flexor_Incline_Dumbbell_Curls/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flexor_Incline_Dumbbell_Curls/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Floor_Glute-Ham_Raise",
+    "nome": "Floor Glúteo-Ham Elevação",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Glute-Ham_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Glute-Ham_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Floor_Press",
+    "nome": "Supino no Chão",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Floor_Press_with_Chains",
+    "nome": "Supino no Chão with Chains",
+    "grupo_muscular": "TRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press_with_Chains/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Floor_Press_with_Chains/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Flutter_Kicks",
+    "nome": "Flutter Kicks",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flutter_Kicks/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Flutter_Kicks/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Foot-SMR",
+    "nome": "Foot-SMR",
+    "grupo_muscular": "PANTURRILHA",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Foot-SMR/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Foot-SMR/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Forward_Drag_with_Press",
+    "nome": "Forward Drag with Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Forward_Drag_with_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Forward_Drag_with_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Frankenstein_Squat",
+    "nome": "Frankenstein Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Frankenstein_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Frankenstein_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Freehand_Jump_Squat",
+    "nome": "Freehand Jump Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Freehand_Jump_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Freehand_Jump_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Frog_Hops",
+    "nome": "Frog Hops",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Frog_Hops/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Frog_Hops/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Frog_Sit-Ups",
+    "nome": "Frog Abdominals",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Frog_Sit-Ups/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Frog_Sit-Ups/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Barbell_Squat",
+    "nome": "Frontal Barra Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Barbell_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Barbell_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Barbell_Squat_To_A_Bench",
+    "nome": "Frontal Barra Agachamento To A Banco",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Barbell_Squat_To_A_Bench/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Barbell_Squat_To_A_Bench/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Box_Jump",
+    "nome": "Frontal Box Jump",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Box_Jump/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Box_Jump/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Cable_Raise",
+    "nome": "Frontal Polia Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cable_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cable_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Cone_Hops_or_hurdle_hops",
+    "nome": "Frontal Cone Hops (or hurdle hops)",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cone_Hops_or_hurdle_hops/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Cone_Hops_or_hurdle_hops/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Dumbbell_Raise",
+    "nome": "Frontal Halter Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Dumbbell_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Incline_Dumbbell_Raise",
+    "nome": "Frontal Inclinado Halter Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Incline_Dumbbell_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Incline_Dumbbell_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Leg_Raises",
+    "nome": "Frontal Perna Elevaçãos",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Plate_Raise",
+    "nome": "Frontal PDorsale Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Plate_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Plate_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Raise_And_Pullover",
+    "nome": "Frontal Elevação And Pullover",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Raise_And_Pullover/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Raise_And_Pullover/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Squat_Clean_Grip",
+    "nome": "Frontal Agachamento (Clean Grip)",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squat_Clean_Grip/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squat_Clean_Grip/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Squats_With_Two_Kettlebells",
+    "nome": "Frontal Agachamentos With Two Kettlebells",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squats_With_Two_Kettlebells/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Squats_With_Two_Kettlebells/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Front_Two-Dumbbell_Raise",
+    "nome": "Frontal Two-Halter Elevação",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Two-Dumbbell_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Two-Dumbbell_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Full_Range-Of-Motion_Lat_Pulldown",
+    "nome": "Full Range-Of-Motion Dorsal Pulldown",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Full_Range-Of-Motion_Lat_Pulldown/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Full_Range-Of-Motion_Lat_Pulldown/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Gironda_Sternum_Chins",
+    "nome": "Gironda Sternum Chins",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Gironda_Sternum_Chins/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Gironda_Sternum_Chins/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Glute_Ham_Raise",
+    "nome": "Glúteo Ham Elevação",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Ham_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Glute_Kickback",
+    "nome": "Glúteo KickCostas",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Kickback/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Glute_Kickback/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Goblet_Squat",
+    "nome": "Goblet Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Good_Morning",
+    "nome": "Good Morning",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Good_Morning_off_Pins",
+    "nome": "Good Morning off Pins",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning_off_Pins/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Good_Morning_off_Pins/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Gorilla_Chin_Crunch",
+    "nome": "Gorilla Chin/Abdominal",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Gorilla_Chin_Crunch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Gorilla_Chin_Crunch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Groin_and_Back_Stretch",
+    "nome": "Virilha and Costas Stretch",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Groin_and_Back_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Groin_and_Back_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Groiners",
+    "nome": "Virilhaers",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Groiners/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Groiners/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hack_Squat",
+    "nome": "Hack Agachamento",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hack_Squat/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hammer_Curls",
+    "nome": "Rosca Martelos",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Curls/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hammer_Grip_Incline_DB_Bench_Press",
+    "nome": "Martelo Grip Inclinado DB Banco Desenvolvimento",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Grip_Incline_DB_Bench_Press/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hammer_Grip_Incline_DB_Bench_Press/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hamstring-SMR",
+    "nome": "Isquiotibiais-SMR",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring-SMR/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring-SMR/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hamstring_Stretch",
+    "nome": "Isquiotibiais Stretch",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring_Stretch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hamstring_Stretch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Handstand_Push-Ups",
+    "nome": "Handstand Flexãos",
+    "grupo_muscular": "OMBROS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hang_Clean",
+    "nome": "Arranque Suspenso",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hang_Clean_-_Below_the_Knees",
+    "nome": "Arranque Suspenso - Below the Knees",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean_-_Below_the_Knees/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Clean_-_Below_the_Knees/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hang_Snatch",
+    "nome": "Hang Snatch",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Snatch/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Snatch/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hang_Snatch_-_Below_Knees",
+    "nome": "Hang Snatch - Below Knees",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Snatch_-_Below_Knees/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hang_Snatch_-_Below_Knees/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hanging_Bar_Good_Morning",
+    "nome": "Hanging Bar Good Morning",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Bar_Good_Morning/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Bar_Good_Morning/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hanging_Leg_Raise",
+    "nome": "Hanging Perna Elevação",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hanging_Pike",
+    "nome": "Hanging Pike",
+    "grupo_muscular": "ABDOMEN",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Pike/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Pike/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Heaving_Snatch_Balance",
+    "nome": "Heaving Snatch Balance",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Heaving_Snatch_Balance/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Heaving_Snatch_Balance/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Heavy_Bag_Thrust",
+    "nome": "Heavy Bag Thrust",
+    "grupo_muscular": "PEITO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Heavy_Bag_Thrust/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Heavy_Bag_Thrust/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "High_Cable_Curls",
+    "nome": "High Polia Roscas",
+    "grupo_muscular": "BICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/High_Cable_Curls/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/High_Cable_Curls/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hip_Circles_prone",
+    "nome": "Hip Circles (prone)",
+    "grupo_muscular": "PERNAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Circles_prone/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Circles_prone/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hip_Extension_with_Bands",
+    "nome": "Hip Extension with Bands",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Extension_with_Bands/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hip_Flexion_with_Band",
+    "nome": "Hip Flexion with Band",
+    "grupo_muscular": "QUADRICEPS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Flexion_with_Band/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Flexion_with_Band/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hip_Lift_with_Band",
+    "nome": "Hip Lift with Band",
+    "grupo_muscular": "GLUTEO",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Lift_with_Band/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hip_Lift_with_Band/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hug_A_Ball",
+    "nome": "Hug A Ball",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_A_Ball/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_A_Ball/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hug_Knees_To_Chest",
+    "nome": "Hug Knees To Peito",
+    "grupo_muscular": "COSTAS",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_Knees_To_Chest/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hug_Knees_To_Chest/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  },
+  {
+    "id": "Hurdle_Hops",
+    "nome": "Hurdle Hops",
+    "grupo_muscular": "POSTERIOR",
+    "url_gif": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hurdle_Hops/0.jpg",
+    "url_gif_fim": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hurdle_Hops/1.jpg",
+    "url_video": "https://www.youtube.com/watch?v=exemplo"
+  }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniSystem - Segurança</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="alterar-senha.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen p-6 fade-in">
+  <div class="max-w-md mx-auto mt-10 bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+    <h2 class="text-xl font-bold text-emerald-500 mb-4">Alterar Senha</h2>
+    <form id="form-senha" class="space-y-4">
+      <div>
+        <label class="block text-sm text-zinc-400 mb-1">Nova Senha</label>
+        <input type="password" id="nova-senha" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2 text-sm focus:border-emerald-500 outline-none">
+      </div>
+      <div>
+        <label class="block text-sm text-zinc-400 mb-1">Confirmar Nova Senha</label>
+        <input type="password" id="confirma-senha" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-4 py-2 text-sm focus:border-emerald-500 outline-none">
+      </div>
+      <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold py-2 rounded-lg transition text-sm">Atualizar Segurança</button>
+    </form>
+    <div id="msg-senha" class="mt-4 text-center text-sm hidden"></div>
+    <a href="../home/home.html" class="block text-center text-sm text-zinc-500 hover:text-emerald-400 mt-4">&larr; Voltar</a>
+  </div>
+  <script type="module" src="alterar-senha.js"></script>
+</body>
+</html>

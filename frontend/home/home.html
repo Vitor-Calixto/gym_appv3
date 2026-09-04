@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniSystem - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen pb-20 md:pb-0">
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-40 bg-zinc-950/90 backdrop-blur border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
+      <div class="flex items-center gap-6">
+        <a href="home.html" class="text-emerald-500 font-black tracking-tight">CALIXTO<span class="text-zinc-500 font-normal text-xs ml-1">OMNI</span></a>
+        <div class="hidden md:flex items-center gap-1 text-xs">
+          <a href="home.html" class="px-3 py-1.5 rounded-lg bg-zinc-900 text-white">Dashboard</a>
+          <a href="../meus-treinos/meus-treinos.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-zinc-400">Meus Treinos</a>
+          <a href="../montar-treino/montar-treino.html" class="link-prof px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-zinc-400">Montar</a>
+          <a href="../gerenciar-alunos/gerenciar-alunos.html" class="link-prof px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-zinc-400">Alunos</a>
+          <a href="../anamnese/anamnese.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-zinc-400">Anamnese</a>
+          <a href="../agenda/agenda.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-zinc-400">Agenda</a>
+          <a href="../financeiro/financeiro.html" class="px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-zinc-400">Financeiro</a>
+          <a href="../admin-painel/admin-painel.html" class="link-admin hidden px-3 py-1.5 rounded-lg hover:bg-zinc-900 text-emerald-400">Admin</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <span id="boas-vindas" class="hidden sm:block text-sm text-zinc-400">Olá, Vitor</span>
+        <button id="btn-logout" class="bg-red-500/10 hover:bg-red-500/20 text-red-400 text-xs px-3 py-1.5 rounded-lg border border-red-500/20">Sair</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="relative overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-30" alt="gym">
+    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-transparent"></div>
+    <div class="relative max-w-7xl mx-auto px-4 py-10 md:py-16">
+      <h1 class="text-3xl md:text-4xl font-black text-white leading-tight">Transforme treino em <span class="text-emerald-500">resultado</span></h1>
+      <p class="text-zinc-300 text-sm mt-2 max-w-xl">Painel geral de treinos, acompanhamento físico e gestão de alunos - tudo em um só lugar.</p>
+      <div class="flex gap-2 mt-5 flex-wrap">
+        <a href="../executar-treino/executar-treino.html" class="bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold px-5 py-2.5 rounded-xl text-sm">▶ Continuar Treino</a>
+        <a href="../montar-treino/montar-treino.html" class="link-prof bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 px-5 py-2.5 rounded-xl text-sm">+ Montar Treino</a>
+        <a href="../agenda/agenda.html" class="bg-zinc-900/60 hover:bg-zinc-800 border border-zinc-800 px-5 py-2.5 rounded-xl text-sm">📅 Agenda</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-6 space-y-8">
+    <!-- QUICK ACCESS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <a href="../meus-treinos/meus-treinos.html" class="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-emerald-500/40 transition">
+        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600&auto=format&fit=crop" class="h-24 w-full object-cover group-hover:scale-105 transition duration-500" alt="">
+        <div class="p-3"><h3 class="font-bold text-sm">Meus Treinos</h3><p class="text-xs text-zinc-500">Ver fichas</p></div>
+      </a>
+      <a href="../anamnese/anamnese.html" class="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-emerald-500/40 transition">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=600&auto=format&fit=crop" class="h-24 w-full object-cover group-hover:scale-105 transition duration-500" alt="">
+        <div class="p-3"><h3 class="font-bold text-sm">Anamnese</h3><p class="text-xs text-zinc-500">Avaliação</p></div>
+      </a>
+      <a href="../gerenciar-alunos/gerenciar-alunos.html" class="link-prof group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-emerald-500/40 transition">
+        <img src="https://images.unsplash.com/photo-1594381898411-58a962c0f97f?q=80&w=600&auto=format&fit=crop" class="h-24 w-full object-cover group-hover:scale-105 transition duration-500" alt="">
+        <div class="p-3"><h3 class="font-bold text-sm">Alunos</h3><p class="text-xs text-zinc-500">Gerenciar</p></div>
+      </a>
+      <a href="../financeiro/financeiro.html" class="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-emerald-500/40 transition">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=600&auto=format&fit=crop" class="h-24 w-full object-cover group-hover:scale-105 transition duration-500" alt="">
+        <div class="p-3"><h3 class="font-bold text-sm">Financeiro</h3><p class="text-xs text-zinc-500">Mensalidades</p></div>
+      </a>
+    </div>
+
+    <!-- SEGUNDO BLOCO -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <a href="../agenda/agenda.html" class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 hover:border-zinc-700 transition text-center">
+        <div class="text-2xl">📅</div><p class="text-sm font-bold mt-1">Agenda</p><p class="text-xs text-zinc-500">Consultas</p>
+      </a>
+      <a href="../frequencia/frequencia.html" class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 hover:border-zinc-700 transition text-center">
+        <div class="text-2xl">📊</div><p class="text-sm font-bold mt-1">Frequência</p><p class="text-xs text-zinc-500">Heatmap</p>
+      </a>
+      <a href="../chat/chat.html" class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 hover:border-zinc-700 transition text-center">
+        <div class="text-2xl">💬</div><p class="text-sm font-bold mt-1">Chat</p><p class="text-xs text-zinc-500">Professor</p>
+      </a>
+      <a href="../admin-painel/admin-painel.html" class="link-admin hidden bg-emerald-600/10 border border-emerald-600/20 rounded-xl p-4 hover:border-emerald-500/40 transition text-center">
+        <div class="text-2xl">🛡️</div><p class="text-sm font-bold mt-1 text-emerald-400">Admin</p><p class="text-xs text-zinc-500">330 exercícios</p>
+      </a>
+    </div>
+
+    <!-- TREINOS -->
+    <div>
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="font-bold">Seus Treinos Cadastrados</h2>
+        <a href="../meus-treinos/meus-treinos.html" class="text-xs text-emerald-400 hover:text-emerald-300">Ver todos →</a>
+      </div>
+      <div id="lista-treinos" class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <p class="text-zinc-500 text-sm">Carregando fichas...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM BAR MOBILE -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 bg-zinc-900 border-t border-zinc-800 flex justify-around py-2 text-xs">
+    <a href="home.html" class="flex flex-col items-center text-emerald-400"><span>🏠</span>Home</a>
+    <a href="../meus-treinos/meus-treinos.html" class="flex flex-col items-center text-zinc-500"><span>💪</span>Treinos</a>
+    <a href="../agenda/agenda.html" class="flex flex-col items-center text-zinc-500"><span>📅</span>Agenda</a>
+    <a href="../financeiro/financeiro.html" class="flex flex-col items-center text-zinc-500"><span>💳</span>Finance</a>
+    <a href="../admin-painel/admin-painel.html" class="link-admin hidden flex-col items-center text-zinc-500"><span>🛡️</span>Admin</a>
+  </div>
+
+  <script type="module" src="home.js"></script>
+</body>
+</html>

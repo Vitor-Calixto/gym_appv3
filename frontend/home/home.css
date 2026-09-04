@@ -1,0 +1,4 @@
+@import url('../css/global.css');
+#lista-treinos > div { transition: transform 0.2s, border-color 0.2s; }
+#lista-treinos > div:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); }
+.link-prof.hidden, .link-admin.hidden { display: none !important; }
