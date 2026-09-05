@@ -7,6 +7,8 @@ export const cadastro = async (req, res) => {
   try {
     const { nome, email, senha, role, professorId } = req.body;
     if (!nome || !email || !senha) return res.status(400).json({ error: 'Nome, e-mail e senha são obrigatórios.' });
+    // Bloqueia ADMIN público - só ADMIN autenticado pode criar ADMIN
+    if (role === 'ADMIN' && (!req.user || req.user.role !== 'ADMIN')) return res.status(403).json({ error: 'Apenas ADMIN pode criar ADMIN.' });
     const existente = await prisma.usuario.findUnique({ where: { email } });
     if (existente) return res.status(409).json({ error: 'E-mail já cadastrado.' });
     const roleValida = ['ADMIN', 'PROFESSOR', 'ALUNO'].includes(role) ? role : 'ALUNO';

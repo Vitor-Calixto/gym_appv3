@@ -1,0 +1,12 @@
+{
+  "fases": [
+    { "nome": "Fase D - Blindagem", "progresso": 100, "status": "concluida" },
+    { "nome": "Fase A - Convite/Aceite", "progresso": 100, "status": "concluida" },
+    { "nome": "Fase B - Dashboard", "progresso": 0, "status": "pendente" },
+    { "nome": "Fase C - Mercado Pago", "progresso": 0, "status": "pendente" },
+    { "nome": "Smart Fit 400 PT-BR", "progresso": 0, "status": "pendente" },
+    { "nome": "Cap.7 E-Learning + Lutas", "progresso": 0, "status": "pendente" },
+    { "nome": "Mega Revisão + Push", "progresso": 0, "status": "pendente" }
+  ],
+  "atual": "Fase B - Dashboard"
+}

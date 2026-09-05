@@ -1,36 +1,28 @@
-// gerenciar-alunos - conectado ao backend
+// frontend/gerenciar-alunos/gerenciar-alunos.js
 import { apiFetch } from '../js/storage.js';
 import { obterUsuario } from '../js/auth.js';
-
-if (!obterUsuario() || obterUsuario().role === 'ALUNO') window.location.href = '../home/home.html';
-
-async function carregarAlunos() {
-  const tbody = document.getElementById('tabela-alunos');
-  tbody.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-zinc-500">Carregando...</td></tr>';
-  try {
-    const alunos = await apiFetch('/alunos');
-    const lista = Array.isArray(alunos) ? alunos : (alunos.alunos || []);
-    if (!lista.length) {
-      tbody.innerHTML = '<tr><td colspan="4" class="p-4 text-center text-zinc-500">Nenhum aluno vinculado.</td></tr>';
-      return;
-    }
-    tbody.innerHTML = lista.map(aluno => `
-      <tr class="hover:bg-zinc-800/50 transition">
-        <td class="p-4 text-zinc-200 font-medium">${aluno.nome}</td>
-        <td class="p-4 text-zinc-400">${aluno.email}</td>
-        <td class="p-4">
-          <span class="px-2 py-1 text-xs rounded-full ${aluno.status === 'Ativo' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-yellow-500/10 text-yellow-400'}">
-            ${aluno.status}
-          </span>
-        </td>
-        <td class="p-4 text-right flex gap-2 justify-end">
-          <a href="../anamnese/anamnese.html?aluno=${aluno.id}" class="text-zinc-400 hover:text-emerald-400 text-xs">Anamnese</a>
-          <a href="../montar-treino/montar-treino.html?aluno=${aluno.id}" class="text-emerald-500 hover:text-emerald-400 text-xs font-medium">Treino</a>
-        </td>
-      </tr>
-    `).join('');
-  } catch (e) {
-    tbody.innerHTML = `<tr><td colspan="4" class="p-4 text-center text-red-400">Erro: ${e.message}</td></tr>`;
-  }
+import { showModal, showPrompt } from '../js/ui.js';
+if (!obterUsuario() || obterUsuario().role === 'ALUNO') location.href='../home/home.html';
+async function carregar(){
+  const grid=document.getElementById('grid-alunos');
+  grid.innerHTML='<p class="text-zinc-500 text-sm">Carregando...</p>';
+  const alunos=await apiFetch('/alunos');
+  const lista=Array.isArray(alunos)?alunos:[];
+  if(!lista.length){ grid.innerHTML='<p class="text-zinc-500 text-sm">Nenhum aluno. Convide.</p>'; return; }
+  grid.innerHTML=lista.map(a=>`
+    <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 flex gap-3">
+      <img src="${a.fotoUrl||'https://placehold.co/80x80/18181b/71717a?text=Foto'}" class="w-16 h-16 rounded-xl object-cover border border-zinc-800">
+      <div class="flex-1 min-w-0">
+        <h3 class="font-bold text-sm truncate">${a.nome}</h3>
+        <p class="text-xs text-zinc-400 truncate">${a.email}</p>
+        <p class="text-xs text-emerald-400 truncate">${a.whatsapp||'sem whatsapp'}</p>
+        <div class="flex gap-2 mt-2">
+          <a href="../alunos/alunos.html?id=${a.id}" class="text-xs bg-zinc-800 px-2 py-1 rounded">Perfil</a>
+          <a href="../montar-treino/montar-treino.html?aluno=${a.id}" class="text-xs bg-emerald-600 px-2 py-1 rounded text-zinc-950">Treino</a>
+        </div>
+      </div>
+    </div>
+  `).join('');
 }
-carregarAlunos();
+document.getElementById('btn-convidar')?.addEventListener('click',()=>showPrompt({titulo:'Convidar aluno',placeholder:'E-mail',onConfirm:async(email)=>{ if(!email) return; const r=await apiFetch('/convites/convidar',{method:'POST',body:JSON.stringify({email})}); showModal({titulo:'Enviado',mensagem:`Convite para ${email}`,tipo:'sucesso'});}}));
+carregar();

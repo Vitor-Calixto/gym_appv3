@@ -27,11 +27,18 @@ model Usuario {
   faturas           Fatura[]
   agendasProfessor  Agenda[]  @relation("AgendaProfessor")
   agendasAluno      Agenda[]  @relation("AgendaAluno")
+  convitesEnviados  Convite[] @relation("ProfessorConvites")
   telefone          String?
+  fotoUrl           String?
+  whatsapp          String?
   resetToken        String?
   resetTokenExpires DateTime?
   createdAt         DateTime  @default(now())
   updatedAt         DateTime  @updatedAt
+  faixa         String?
+  mpAccessToken String?
+  aulasCriadas   AulaGravada[] @relation("ProfessorAula")
+  aulasCompradas AcessoAula[]  @relation("AlunoAcesso")
 }
 
 model Exercicio {
@@ -106,4 +113,41 @@ model Agenda {
   professor   Usuario  @relation("AgendaProfessor", fields: [professorId], references: [id])
   aluno       Usuario? @relation("AgendaAluno", fields: [alunoId], references: [id])
   createdAt   DateTime @default(now())
+}
+
+model Convite {
+  id          String   @id @default(uuid())
+  professorId String
+  alunoEmail  String
+  alunoId     String?
+  token       String   @unique
+  status      String   @default("PENDENTE")
+  expiresAt   DateTime
+  professor   Usuario  @relation("ProfessorConvites", fields: [professorId], references: [id])
+  createdAt   DateTime @default(now())
+}
+
+model AulaGravada {
+  id          String       @id @default(uuid())
+  titulo      String
+  descricao   String?
+  embedUrl    String
+  preco       Float
+  faixaMinima String?
+  categoria   String       @default("MUSCULACAO") // MUSCULACAO, LUTAS_JIU_JITSU, LUTAS_MUAY_THAI, LUTAS_TAEKWONDO, LUTAS_BOXE
+  professorId String
+  professor   Usuario      @relation("ProfessorAula", fields: [professorId], references: [id])
+  acessos     AcessoAula[]
+  createdAt   DateTime     @default(now())
+}
+model AcessoAula {
+  id        String      @id @default(uuid())
+  alunoId   String
+  aulaId    String
+  aluno     Usuario     @relation("AlunoAcesso", fields: [alunoId], references: [id])
+  aula      AulaGravada @relation(fields: [aulaId], references: [id])
+  status    String      @default("PENDENTE")
+  expiresAt DateTime?
+  createdAt DateTime    @default(now())
+  @@unique([alunoId, aulaId])
 }

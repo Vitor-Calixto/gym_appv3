@@ -2,6 +2,8 @@
 
 > **vFinal 2026-09-04** - 330 exercícios PT-BR (2 gifs + keyframe 3s) | PWA offline + voz | Auth completa | Treinos templates | Circuito PRINCIPAL
 
+> **Progresso ao vivo:** `D 100% ✓` `A 10% ▶` `B 0%` `C 0%` `Smart Fit 0%` `Cap.7 0%` `Mega 0%` • Ver `http://localhost:5501/progress.html` • Atualizado em README a cada `100%`
+
 ---
 
 ## Sumário do Livro

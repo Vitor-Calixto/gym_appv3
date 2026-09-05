@@ -1,12 +1,12 @@
 // home.js - com navbar por role + hero
 import { apiFetch } from '../js/storage.js';
 import { obterUsuario, logout } from '../js/auth.js';
+import { showModal } from '../js/ui.js';
 
 const usuario = obterUsuario();
 if (!usuario) window.location.href = '../index/index.html';
 else {
   document.getElementById('boas-vindas').textContent = `Olá, ${usuario.nome}`;
-  // Mostra links por role
   if (usuario.role === 'ADMIN' || usuario.role === 'PROFESSOR') {
     document.querySelectorAll('.link-prof').forEach(el => el.classList.remove('hidden'));
   }
@@ -14,6 +14,7 @@ else {
     document.querySelectorAll('.link-admin').forEach(el => el.classList.remove('hidden'));
   }
   carregarTreinos();
+  carregarConvites();
 }
 
 document.getElementById('btn-logout').addEventListener('click', logout);
@@ -43,3 +44,28 @@ async function carregarTreinos() {
     container.innerHTML = '<p class="text-red-400 text-sm">Erro ao carregar treinos.</p>';
   }
 }
+
+// --- Convites pendentes (Fase A) ---
+async function carregarConvites() {
+  try {
+    const convites = await apiFetch('/convites');
+    const pendentes = Array.isArray(convites) ? convites.filter(c => c.status === 'PENDENTE' && c.alunoEmail === usuario.email) : [];
+    if (!pendentes.length) return;
+    const container = document.createElement('div');
+    container.className = 'bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4 mt-4';
+    container.innerHTML = `<h3 class="font-bold text-yellow-400">Convites pendentes</h3>` + pendentes.map(c => `
+      <div class="flex justify-between items-center mt-2 bg-zinc-900 p-3 rounded-lg">
+        <span class="text-sm">${c.professor.nome} (${c.professor.email}) te convidou</span>
+        <div class="flex gap-2">
+          <button onclick="responderConvite('${c.token}','aceitar')" class="bg-emerald-600 px-3 py-1 rounded text-xs">Aceitar</button>
+          <button onclick="responderConvite('${c.token}','recusar')" class="bg-zinc-700 px-3 py-1 rounded text-xs">Recusar</button>
+        </div>
+      </div>
+    `).join('');
+    document.querySelector('.max-w-7xl').appendChild(container);
+  } catch {}
+}
+window.responderConvite = async (token, acao) => {
+  await apiFetch(`/convites/${acao}/${token}`, { method: 'POST' });
+  showModal({ titulo: acao==='aceitar'?'Aceito':'Recusado', mensagem: acao==='aceitar'?'Você agora está vinculado ao professor!':'Convite recusado.', tipo: acao==='aceitar'?'sucesso':'erro', onConfirm: ()=> location.reload() });
+};
