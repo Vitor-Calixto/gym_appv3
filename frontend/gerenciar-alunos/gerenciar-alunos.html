@@ -6,11 +6,27 @@
   <header class="flex justify-between items-center border-b border-zinc-800 pb-4">
     <h1 class="text-xl font-bold text-emerald-500">Alunos</h1>
     <div class="flex gap-2">
+      <button id="btn-cadastrar" class="bg-emerald-600 hover:bg-emerald-500 px-3 py-1.5 rounded-lg text-xs font-bold">+ Cadastrar aluno</button>
       <button id="btn-convidar" class="bg-zinc-800 border border-zinc-700 px-3 py-1.5 rounded-lg text-xs">+ Convidar</button>
       <a href="../home/home.html" class="bg-zinc-800 border border-zinc-700 px-3 py-1.5 rounded-lg text-xs">Voltar</a>
     </div>
   </header>
   <div id="grid-alunos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+</div>
+<!-- Modal cadastrar aluno -->
+<div id="modal-cadastro" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center p-4 backdrop-blur-sm">
+  <form id="form-cadastro-aluno" class="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-sm p-5 space-y-3">
+    <h3 class="font-bold">Cadastrar aluno</h3>
+    <p class="text-xs text-zinc-500">O aluno já nasce vinculado a você e pode logar com este e-mail e senha.</p>
+    <input id="cad-nome" placeholder="Nome completo" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+    <input id="cad-email" type="email" placeholder="E-mail" required class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+    <input id="cad-senha" type="password" placeholder="Senha inicial" required minlength="6" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+    <input id="cad-whatsapp" placeholder="WhatsApp (opcional)" maxlength="20" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+    <div class="flex gap-2">
+      <button type="button" id="btn-fechar-cadastro" class="flex-1 bg-zinc-800 py-2.5 rounded-xl text-sm">Cancelar</button>
+      <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-500 font-bold py-2.5 rounded-xl text-sm">Cadastrar</button>
+    </div>
+  </form>
 </div>
 <script type="module" src="gerenciar-alunos.js"></script>  <script type="module">import{renderNav} from '../js/nav.js'; renderNav('GERENCIAR ALUNOS');</script>
 </body></html>

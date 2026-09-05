@@ -22,12 +22,34 @@
       75% { transform: translate(70%, 80%); }
       100% { transform: translate(0,0); }
     }
+    .aba-luta.ativa { background: #059669; color: #fff; }
   </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100 min-h-screen pb-20">
   <div class="max-w-3xl mx-auto p-4 space-y-4">
-    <h1 class="text-xl font-bold text-emerald-500">Portal de Lutas</h1>
-    <div id="grid-aulas" class="grid gap-4"></div>
+    <div>
+      <h1 class="text-xl font-bold text-emerald-500">Portal de Lutas</h1>
+      <p id="catalogo-dono" class="text-xs text-zinc-500"></p>
+    </div>
+    <div id="abas-lutas" class="flex gap-2 flex-wrap text-xs">
+      <button data-cat="" class="aba-luta ativa bg-zinc-800 px-3 py-1.5 rounded-full">Todas</button>
+      <button data-cat="LUTAS_JIU_JITSU" class="aba-luta bg-zinc-800 px-3 py-1.5 rounded-full">Jiu-Jítsu</button>
+      <button data-cat="LUTAS_MUAY_THAI" class="aba-luta bg-zinc-800 px-3 py-1.5 rounded-full">Muay Thai</button>
+      <button data-cat="LUTAS_TAEKWONDO" class="aba-luta bg-zinc-800 px-3 py-1.5 rounded-full">Taekwondo</button>
+      <button data-cat="LUTAS_BOXE" class="aba-luta bg-zinc-800 px-3 py-1.5 rounded-full">Boxe</button>
+    </div>
+    <div>
+      <h2 class="font-bold text-sm mb-2">Demonstração gratuita</h2>
+      <div id="grade-gratis" class="grid gap-3"></div>
+    </div>
+    <div>
+      <h2 class="font-bold text-sm mb-2">Pacotes do professor</h2>
+      <div id="grade-pacotes" class="grid gap-3"></div>
+    </div>
+    <div>
+      <h2 class="font-bold text-sm mb-2">Aulas pagas</h2>
+      <div id="grid-aulas" class="grid gap-3"></div>
+    </div>
   </div>
   <script type="module">
     import { apiFetch } from '../js/storage.js';
@@ -37,44 +59,94 @@
     if (!user) location.href = '../index/index.html';
 
     const VIDEOS = ['_8u1rX4bksM', 'CTXLq50wU0Q'];
-    const grid = document.getElementById('grid-aulas');
-    let html = '<div class="grid gap-3">' + VIDEOS.map((id) => `<div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden"><iframe class="w-full h-48" src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe></div>`).join('') + '</div>';
+    let catAtiva = '';
+    let cacheAulas = [];
+    let cachePacotes = [];
+    let liberadas = new Map();
 
-    const [aulas, minhas] = await Promise.all([
+    document.querySelectorAll('.aba-luta').forEach((b) => b.addEventListener('click', () => {
+      document.querySelectorAll('.aba-luta').forEach((x) => x.classList.remove('ativa'));
+      b.classList.add('ativa');
+      catAtiva = b.dataset.cat;
+      render();
+    }));
+
+    const [aulas, pacotes, minhas] = await Promise.all([
       apiFetch('/aulas').catch(() => []),
+      apiFetch('/pacotes').catch(() => []),
       apiFetch('/aulas/minhas').catch(() => []),
     ]);
-    const liberadas = new Map((minhas || []).map((m) => [m.aulaId || m.aula?.id, m]));
+    cacheAulas = Array.isArray(aulas) ? aulas : [];
+    cachePacotes = Array.isArray(pacotes) ? pacotes : [];
+    liberadas = new Map((minhas || []).map((m) => [m.aulaId || m.aula?.id, m]));
+    const dono = cacheAulas[0]?.professor?.nome || cachePacotes[0]?.professor?.nome;
+    if (user.role === 'ALUNO' && dono) document.getElementById('catalogo-dono').textContent = `Catálogo do seu professor: ${dono}`;
 
-    html += (aulas || []).map((a) => {
-      const lib = liberadas.get(a.id);
-      const marca = `${user.nome} • ${user.email}`;
-      if (lib) {
-        const exp = lib.expiresAt ? new Date(lib.expiresAt).toLocaleDateString('pt-BR') : 'sem expiração';
-        return `<div class="bg-zinc-900 border border-emerald-600/40 rounded-xl overflow-hidden">
-          <div class="p-3"><h3 class="font-bold text-sm">${a.titulo}</h3><p class="text-xs text-emerald-400">LIBERADA até ${exp}</p></div>
-          <div class="video-wrap"><iframe class="w-full h-64" src="${lib.aula.embedUrl}" allowfullscreen></iframe><div class="watermark">${marca}</div></div>
-        </div>`;
-      }
-      return `<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
-        <h3 class="font-bold text-sm">${a.titulo}</h3>
-        <p class="text-xs text-zinc-500">${a.categoria}${a.faixaMinima ? ` • Faixa ${a.faixaMinima}+` : ''}</p>
-        <button data-id="${a.id}" class="btn-comprar mt-2 bg-emerald-600 px-3 py-1.5 rounded-lg text-xs font-bold">Comprar R$ ${Number(a.preco).toFixed(2)} - PIX</button>
-        <div id="aula-${a.id}" class="hidden mt-3"></div>
-      </div>`;
-    }).join('');
-    grid.innerHTML = html;
+    function filtradas(lista) {
+      return lista.filter((a) => !catAtiva || (a.categoria || '') === catAtiva);
+    }
 
-    grid.querySelectorAll('.btn-comprar').forEach((btn) => btn.addEventListener('click', async () => {
-      const res = await apiFetch(`/aulas/${btn.dataset.id}/comprar`, { method: 'POST' }).catch((e) => ({ error: e.message }));
-      if (res?.error) { showModal({ titulo: 'Bloqueado', mensagem: res.error, tipo: 'erro' }); return; }
-      if (res?.jaLiberado) { location.reload(); return; }
-      if (res?.qrCode) {
-        const box = document.getElementById(`aula-${btn.dataset.id}`);
-        box.innerHTML = `<img src="data:image/png;base64,${res.qrCode}" class="w-48 mx-auto"><p class="text-xs text-center mt-2 break-all">${res.copiaCola}</p><p class="text-xs text-center text-yellow-400 mt-1">Aguardando compensação — libera automático.</p>`;
-        box.classList.remove('hidden');
+    function render() {
+      const gratis = filtradas(cacheAulas.filter((a) => a.gratuita));
+      document.getElementById('grade-gratis').innerHTML =
+        '<div class="grid gap-3">' + VIDEOS.map((id) => `<div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden"><iframe class="w-full h-48" src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe></div>`).join('') + '</div>'
+        + gratis.map((a) => {
+          const lib = liberadas.get(a.id);
+          if (lib?.aula?.embedUrl) return `<div class="bg-zinc-900 border border-emerald-600/40 rounded-xl overflow-hidden"><div class="p-3"><h3 class="font-bold text-sm">${a.titulo}</h3></div><div class="video-wrap"><iframe class="w-full h-64" src="${lib.aula.embedUrl}" allowfullscreen></iframe><div class="watermark">${user.nome} • ${user.email}</div></div></div>`;
+          return `<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4"><h3 class="font-bold text-sm">${a.titulo}</h3><p class="text-xs text-zinc-500">Aula gratuita — toque para liberar</p><button data-id="${a.id}" class="btn-liberar-gratis mt-2 bg-zinc-700 px-3 py-1.5 rounded-lg text-xs">Assistir grátis</button><div id="aula-${a.id}" class="hidden mt-3"></div></div>`;
+        }).join('');
+
+      const pacs = filtradas(cachePacotes);
+      document.getElementById('grade-pacotes').innerHTML = pacs.length ? pacs.map((p) => `
+        <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+          <h3 class="font-bold text-sm">📦 ${p.titulo}</h3>
+          <p class="text-xs text-zinc-500">${p.itens?.length || 0} aulas • R$ ${Number(p.preco).toFixed(2)}</p>
+          <button data-id="${p.id}" class="btn-comprar-pacote mt-2 bg-emerald-600 px-3 py-1.5 rounded-lg text-xs font-bold">Comprar pacote - PIX</button>
+          <div id="pac-${p.id}" class="hidden mt-3"></div>
+        </div>`).join('') : '<p class="text-xs text-zinc-600">Nenhum pacote neste filtro.</p>';
+
+      const pagas = filtradas(cacheAulas.filter((a) => !a.gratuita));
+      const porSecao = new Map();
+      for (const a of pagas) {
+        const s = a.secao || 'Geral';
+        if (!porSecao.has(s)) porSecao.set(s, []);
+        porSecao.get(s).push(a);
       }
-    }));
+      document.getElementById('grid-aulas').innerHTML = [...porSecao.entries()].map(([secao, itens]) =>
+        `<div><p class="text-xs text-zinc-500 uppercase tracking-wider mb-2">${secao}</p><div class="grid gap-3">` + itens.map((a) => {
+          const lib = liberadas.get(a.id);
+          if (lib?.aula?.embedUrl) return `<div class="bg-zinc-900 border border-emerald-600/40 rounded-xl overflow-hidden"><div class="p-3"><h3 class="font-bold text-sm">${a.titulo}</h3><p class="text-xs text-emerald-400">LIBERADA</p></div><div class="video-wrap"><iframe class="w-full h-64" src="${lib.aula.embedUrl}" allowfullscreen></iframe><div class="watermark">${user.nome} • ${user.email}</div></div></div>`;
+          return `<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4"><h3 class="font-bold text-sm">${a.titulo}</h3><p class="text-xs text-zinc-500">${a.categoria}${a.faixaMinima ? ` • Faixa ${a.faixaMinima}+` : ''}</p><button data-id="${a.id}" class="btn-comprar mt-2 bg-emerald-600 px-3 py-1.5 rounded-lg text-xs font-bold">Comprar R$ ${Number(a.preco).toFixed(2)} - PIX</button><div id="aula-${a.id}" class="hidden mt-3"></div></div>`;
+        }).join('') + '</div></div>'
+      ).join('') || '<p class="text-xs text-zinc-600">Nenhuma aula neste filtro.</p>';
+
+      document.querySelectorAll('.btn-liberar-gratis').forEach((btn) => btn.addEventListener('click', async () => {
+        const res = await apiFetch(`/aulas/${btn.dataset.id}/comprar`, { method: 'POST' }).catch((e) => ({ error: e.message }));
+        if (res?.error) { showModal({ titulo: 'Bloqueado', mensagem: res.error, tipo: 'erro' }); return; }
+        location.reload();
+      }));
+      document.querySelectorAll('.btn-comprar').forEach((btn) => btn.addEventListener('click', async () => {
+        const res = await apiFetch(`/aulas/${btn.dataset.id}/comprar`, { method: 'POST' }).catch((e) => ({ error: e.message }));
+        if (res?.error) { showModal({ titulo: 'Bloqueado', mensagem: res.error, tipo: 'erro' }); return; }
+        if (res?.jaLiberado) { location.reload(); return; }
+        if (res?.qrCode) {
+          const box = document.getElementById(`aula-${btn.dataset.id}`);
+          box.innerHTML = `<img src="data:image/png;base64,${res.qrCode}" class="w-48 mx-auto"><p class="text-xs text-center mt-2 break-all">${res.copiaCola}</p><p class="text-xs text-center text-yellow-400 mt-1">Aguardando compensação — libera automático.</p>`;
+          box.classList.remove('hidden');
+        }
+      }));
+      document.querySelectorAll('.btn-comprar-pacote').forEach((btn) => btn.addEventListener('click', async () => {
+        const res = await apiFetch(`/pacotes/${btn.dataset.id}/comprar`, { method: 'POST' }).catch((e) => ({ error: e.message }));
+        if (res?.error) { showModal({ titulo: 'Bloqueado', mensagem: res.error, tipo: 'erro' }); return; }
+        if (res?.jaLiberado) { location.reload(); return; }
+        if (res?.qrCode) {
+          const box = document.getElementById(`pac-${btn.dataset.id}`);
+          box.innerHTML = `<img src="data:image/png;base64,${res.qrCode}" class="w-48 mx-auto"><p class="text-xs text-center mt-2 break-all">${res.copiaCola}</p>`;
+          box.classList.remove('hidden');
+        }
+      }));
+    }
+    render();
   </script>
   <script type="module">import{renderNav} from '../js/nav.js'; renderNav('PORTAL LUTAS');</script>
 </body>

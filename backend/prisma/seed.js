@@ -69,8 +69,9 @@ async function main() {
     ];
   }
 
-  // SmartFit: nunca ressuscita supino no chão
+  // SmartFit: nunca ressuscita supino no chão nem a categoria BRACOS (foi distribuída em BICEPS/TRICEPS/OMBROS/COSTAS)
   exercicios = exercicios.filter((ex) => !/floor press|supino no ch[ãa]o/i.test(ex.nome || ''));
+  exercicios = exercicios.filter((ex) => String(ex.grupoMuscular || ex.grupo_muscular || '').toUpperCase() !== 'BRACOS');
   let criados = 0, atualizados = 0;
   for (const ex of exercicios) {
     const result = await prisma.exercicio.upsert({

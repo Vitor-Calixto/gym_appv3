@@ -29,9 +29,15 @@ export const aceitar = async (req, res) => {
     const { token } = req.params;
     const convite = await prisma.convite.findUnique({ where: { token } });
     if (!convite || convite.expiresAt < new Date()) return res.status(400).json({ error: 'Convite inválido ou expirado.' });
-    if (convite.alunoEmail !== req.user.email) return res.status(403).json({ error: 'Convite não é para seu e-mail.' });
+    if (convite.status !== 'PENDENTE') return res.status(400).json({ error: 'Convite já utilizado.' });
+    // Convite por e-mail: só o dono do e-mail aceita. Link genérico (alunoEmail vazio): qualquer ALUNO.
+    if (convite.alunoEmail) {
+      if (convite.alunoEmail !== req.user.email) return res.status(403).json({ error: 'Convite não é para seu e-mail.' });
+    } else if (req.user.role !== 'ALUNO') {
+      return res.status(403).json({ error: 'Este link é para cadastro de alunos.' });
+    }
     await prisma.usuario.update({ where: { id: req.user.id }, data: { professorId: convite.professorId } });
-    await prisma.convite.update({ where: { id: convite.id }, data: { status: 'ACEITO', alunoId: req.user.id } });
+    await prisma.convite.update({ where: { id: convite.id }, data: { status: 'ACEITO', alunoId: req.user.id, alunoEmail: req.user.email } });
     return res.json({ sucesso: true });
   } catch (e) { return res.status(500).json({ error: 'Erro ao aceitar.' }); }
 };
@@ -45,8 +51,11 @@ export const recusar = async (req, res) => {
 };
 
 export const gerarLink = async (req,res)=>{
-  const token=crypto.randomBytes(16).toString('hex');
-  const convite=await prisma.convite.create({data:{professorId:req.user.id, alunoEmail:'', token, expiresAt:new Date(Date.now()+30*24*60*60*1000)}});
-  const link=`http://localhost:5501/cadastro/cadastro.html?convite=${token}`;
-  return res.json({link, token});
+  try {
+    const token=crypto.randomBytes(16).toString('hex');
+    const convite=await prisma.convite.create({data:{professorId:req.user.id, alunoEmail:'', token, expiresAt:new Date(Date.now()+30*24*60*60*1000)}});
+    const base=(process.env.CLIENT_URL || '').replace(/\/$/,'') || `${req.protocol}://${req.get('host')}`;
+    const link=`${base}/cadastro/cadastro.html?convite=${token}`;
+    return res.json({link, token});
+  } catch (e) { console.error(e); return res.status(500).json({ error: 'Erro ao gerar link.' }); }
 };

@@ -24,9 +24,32 @@
         <option value="">Sem restrição de faixa</option>
         <option>BRANCA</option><option>CINZA</option><option>AMARELA</option><option>LARANJA</option><option>VERDE</option><option>AZUL</option><option>ROXA</option><option>MARROM</option><option>PRETA</option>
       </select>
+      <div class="grid grid-cols-2 gap-2">
+        <input id="secao" placeholder="Seção (ex: Fundamentos)" maxlength="60" class="bg-zinc-950 border border-zinc-800 rounded px-3 py-2 text-sm">
+        <input id="ordem" type="number" min="0" value="0" placeholder="Ordem" class="bg-zinc-950 border border-zinc-800 rounded px-3 py-2 text-sm">
+      </div>
+      <label class="flex items-center gap-2 text-xs text-zinc-400"><input id="gratuita" type="checkbox" class="accent-emerald-500"> Aula gratuita (demonstração)</label>
       <button class="w-full bg-emerald-600 hover:bg-emerald-500 py-2 rounded-xl font-bold text-sm">Criar Aula</button>
     </form>
     <div id="lista-aulas" class="grid gap-3"></div>
+
+    <h2 class="text-lg font-bold text-emerald-500 pt-4">Meus Pacotes</h2>
+    <p class="text-xs text-zinc-500">Monte um pacote com suas aulas — visível só para você e seus alunos.</p>
+    <form id="form-pacote" class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-2">
+      <input id="pac-titulo" placeholder="Título do pacote (ex: Boxe Fundamentos)" required maxlength="120" class="w-full bg-zinc-950 border border-zinc-800 rounded px-3 py-2 text-sm">
+      <div class="grid grid-cols-2 gap-2">
+        <input id="pac-preco" type="number" min="1" step="0.01" placeholder="Preço (R$)" required class="bg-zinc-950 border border-zinc-800 rounded px-3 py-2 text-sm">
+        <select id="pac-categoria" class="bg-zinc-950 border border-zinc-800 rounded px-3 py-2 text-sm">
+          <option>MUSCULACAO</option><option>LUTAS_JIU_JITSU</option><option>LUTAS_MUAY_THAI</option><option>LUTAS_TAEKWONDO</option><option>LUTAS_BOXE</option><option>CARDIO</option><option>PILATES</option>
+        </select>
+      </div>
+      <div id="pac-aulas" class="space-y-1 max-h-48 overflow-y-auto"></div>
+      <button class="w-full bg-emerald-600 hover:bg-emerald-500 py-2 rounded-xl font-bold text-sm">Criar Pacote</button>
+    </form>
+    <div id="lista-pacotes" class="grid gap-3"></div>
+
+    <h2 class="text-lg font-bold text-emerald-500 pt-4">Aguardando pagamento</h2>
+    <div id="lista-pendentes" class="grid gap-3"></div>
   </div>
   <script type="module" src="gerenciar-aulas.js"></script>
   <script type="module">import{renderNav} from '../js/nav.js'; renderNav('GERENCIAR AULAS');</script>

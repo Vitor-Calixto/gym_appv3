@@ -1,11 +1,13 @@
 import { Router } from 'express';
-import { criarAula, listarAulas, minhasAulas, comprarAula, liberarAcesso, deletarAula } from '../controllers/aulaController.js';
+import { criarAula, listarAulas, minhasAulas, comprarAula, liberarAcesso, deletarAula, atualizarAula, acessosPendentes } from '../controllers/aulaController.js';
 import { authMiddleware } from '../middlewares/authMiddleware.js';
 import { roleMiddleware } from '../middlewares/roleMiddleware.js';
 const router = Router();
 router.get('/', authMiddleware, listarAulas);
 router.get('/minhas', authMiddleware, minhasAulas);
+router.get('/pendentes', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), acessosPendentes);
 router.post('/', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), criarAula);
+router.put('/:id', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), atualizarAula);
 router.post('/:id/comprar', authMiddleware, comprarAula);
 router.post('/:id/liberar', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), liberarAcesso);
 router.delete('/:id', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), deletarAula);

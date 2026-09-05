@@ -1,4 +1,32 @@
+import bcrypt from 'bcrypt';
 import { prisma } from '../config/prisma.js';
+
+// Professor/Admin cadastra aluno já vinculado (sem trocar a sessão de quem cadastrou)
+export const cadastrarAluno = async (req, res) => {
+  try {
+    const { nome, email, senha, whatsapp } = req.body;
+    if (!nome || !email || !senha) return res.status(400).json({ error: 'Nome, e-mail e senha são obrigatórios.' });
+    const existente = await prisma.usuario.findUnique({ where: { email } });
+    if (existente) return res.status(409).json({ error: 'E-mail já cadastrado.' });
+    // Professor vincula a si; ADMIN pode informar professorId ou deixar sem vínculo
+    let professorId = null;
+    if (req.user.role === 'PROFESSOR') professorId = req.user.id;
+    else if (req.body.professorId) {
+      const professor = await prisma.usuario.findUnique({ where: { id: req.body.professorId } });
+      if (!professor || !['PROFESSOR', 'ADMIN'].includes(professor.role)) return res.status(400).json({ error: 'Professor inválido.' });
+      professorId = req.body.professorId;
+    }
+    const senhaHash = await bcrypt.hash(senha, 10);
+    const aluno = await prisma.usuario.create({
+      data: { nome, email, senha: senhaHash, role: 'ALUNO', professorId, whatsapp: whatsapp || null },
+      select: { id: true, nome: true, email: true, role: true, professorId: true, whatsapp: true },
+    });
+    return res.status(201).json(aluno);
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: 'Erro ao cadastrar aluno.' });
+  }
+};
 
 export const listarAlunos = async (req, res) => {
   try {
@@ -7,7 +35,7 @@ export const listarAlunos = async (req, res) => {
     if (req.user.role === 'PROFESSOR') where.professorId = req.user.id;
     const alunos = await prisma.usuario.findMany({
       where,
-      select: { id: true, nome: true, email: true, professorId: true, createdAt: true, anamnese: true },
+      select: { id: true, nome: true, email: true, professorId: true, telefone: true, whatsapp: true, fotoUrl: true, createdAt: true, anamnese: true },
       orderBy: { nome: 'asc' }
     });
     // Enriquece com status baseado em treinos

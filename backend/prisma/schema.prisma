@@ -39,6 +39,8 @@ model Usuario {
   mpAccessToken String?
   aulasCriadas   AulaGravada[] @relation("ProfessorAula")
   aulasCompradas AcessoAula[]  @relation("AlunoAcesso")
+  pacotesCriados Pacote[]     @relation("ProfessorPacote")
+  pacotesComprados AcessoPacote[] @relation("AlunoPacote")
 }
 
 model Exercicio {
@@ -135,10 +137,50 @@ model AulaGravada {
   preco       Float
   faixaMinima String?
   categoria   String       @default("MUSCULACAO") // MUSCULACAO, LUTAS_JIU_JITSU, LUTAS_MUAY_THAI, LUTAS_TAEKWONDO, LUTAS_BOXE
+  gratuita    Boolean      @default(false) // true = demonstração na prateleira gratuita
+  secao       String?      // organização do professor (ex: "Fundamentos") — visível só no catálogo dele
+  ordem       Int          @default(0) // ordem dentro da seção no catálogo do professor
   professorId String
   professor   Usuario      @relation("ProfessorAula", fields: [professorId], references: [id])
   acessos     AcessoAula[]
+  emPacotes   ItemPacote[]
   createdAt   DateTime     @default(now())
+}
+
+// Pacote do professor (ex: "Boxe Fundamentos") — só ele e os alunos dele veem
+model Pacote {
+  id          String       @id @default(uuid())
+  titulo      String
+  descricao   String?
+  preco       Float
+  categoria   String       @default("MUSCULACAO")
+  professorId String
+  professor   Usuario      @relation("ProfessorPacote", fields: [professorId], references: [id])
+  itens       ItemPacote[]
+  acessos     AcessoPacote[]
+  createdAt   DateTime     @default(now())
+}
+
+model ItemPacote {
+  id        String      @id @default(uuid())
+  pacoteId  String
+  aulaId    String
+  ordem     Int         @default(0)
+  pacote    Pacote      @relation(fields: [pacoteId], references: [id], onDelete: Cascade)
+  aula      AulaGravada @relation(fields: [aulaId], references: [id], onDelete: Cascade)
+  @@unique([pacoteId, aulaId])
+}
+
+model AcessoPacote {
+  id        String   @id @default(uuid())
+  alunoId   String
+  pacoteId  String
+  aluno     Usuario  @relation("AlunoPacote", fields: [alunoId], references: [id])
+  pacote    Pacote   @relation(fields: [pacoteId], references: [id])
+  status    String   @default("PENDENTE") // PENDENTE, LIBERADO, REVOGADO
+  expiresAt DateTime?
+  createdAt DateTime @default(now())
+  @@unique([alunoId, pacoteId])
 }
 model AcessoAula {
   id        String      @id @default(uuid())

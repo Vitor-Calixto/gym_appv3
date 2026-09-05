@@ -1,0 +1,11 @@
+import { Router } from 'express';
+import { criarPacote, listarPacotes, deletarPacote, comprarPacote, liberarPacote } from '../controllers/pacoteController.js';
+import { authMiddleware } from '../middlewares/authMiddleware.js';
+import { roleMiddleware } from '../middlewares/roleMiddleware.js';
+const router = Router();
+router.get('/', authMiddleware, listarPacotes);
+router.post('/', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), criarPacote);
+router.post('/:id/comprar', authMiddleware, comprarPacote);
+router.post('/:id/liberar', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), liberarPacote);
+router.delete('/:id', authMiddleware, roleMiddleware(['PROFESSOR', 'ADMIN']), deletarPacote);
+export default router;

@@ -16,6 +16,7 @@ import conviteRoutes from './routes/conviteRoutes.js';
 import aulaRoutes from './routes/aulaRoutes.js';
 import usuariosRoutes from './routes/usuariosRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
+import pacoteRoutes from './routes/pacoteRoutes.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -47,6 +48,7 @@ app.use('/api/convites', conviteRoutes);
 app.use('/api/aulas', aulaRoutes);
 app.use('/api/usuarios', usuariosRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/pacotes', pacoteRoutes);
 
 app.use((req, res) => res.status(404).json({ error: 'Rota não encontrada.' }));
 

@@ -17,10 +17,11 @@ function faixaSuficiente(userFaixa, minima) {
 
 export const criarAula = async (req, res) => {
   try {
-    const { titulo, descricao, embedUrl, preco, categoria, faixaMinima } = req.body;
+    const { titulo, descricao, embedUrl, preco, categoria, faixaMinima, gratuita, secao, ordem } = req.body;
     if (!titulo || !embedUrl || preco === undefined) return res.status(400).json({ error: 'Título, embedUrl e preço obrigatórios.' });
     const valor = Number(preco);
-    if (!Number.isFinite(valor) || valor <= 0) return res.status(400).json({ error: 'Preço inválido.' });
+    if (!Number.isFinite(valor) || valor < 0) return res.status(400).json({ error: 'Preço inválido.' });
+    if (valor === 0 && !gratuita) return res.status(400).json({ error: 'Preço zero só para aula gratuita.' });
     const cat = (categoria || 'MUSCULACAO').toUpperCase();
     if (!CATEGORIAS.includes(cat)) return res.status(400).json({ error: 'Categoria inválida.' });
     const aula = await prisma.aulaGravada.create({
@@ -31,6 +32,9 @@ export const criarAula = async (req, res) => {
         preco: valor,
         categoria: cat,
         faixaMinima: faixaMinima ? String(faixaMinima).toUpperCase().slice(0, 20) : null,
+        gratuita: !!gratuita,
+        secao: secao ? String(secao).slice(0, 60) : null,
+        ordem: Number.isFinite(Number(ordem)) ? Number(ordem) : 0,
         professorId: req.user.id,
       },
     });
@@ -41,14 +45,57 @@ export const criarAula = async (req, res) => {
   }
 };
 
-// Vitrine: nunca expõe embedUrl aqui
+export const atualizarAula = async (req, res) => {
+  try {
+    const aula = await prisma.aulaGravada.findUnique({ where: { id: req.params.id } });
+    if (!aula) return res.status(404).json({ error: 'Aula não encontrada.' });
+    if (req.user.role !== 'ADMIN' && aula.professorId !== req.user.id) return res.status(403).json({ error: 'Acesso negado.' });
+    const { titulo, descricao, embedUrl, preco, categoria, faixaMinima, gratuita, secao, ordem } = req.body;
+    const data = {};
+    if (titulo !== undefined) data.titulo = String(titulo).slice(0, 120);
+    if (descricao !== undefined) data.descricao = descricao ? String(descricao).slice(0, 500) : null;
+    if (embedUrl !== undefined) data.embedUrl = String(embedUrl).slice(0, 500);
+    if (preco !== undefined) {
+      const valor = Number(preco);
+      if (!Number.isFinite(valor) || valor < 0) return res.status(400).json({ error: 'Preço inválido.' });
+      data.preco = valor;
+    }
+    if (categoria !== undefined) {
+      const cat = String(categoria).toUpperCase();
+      if (!CATEGORIAS.includes(cat)) return res.status(400).json({ error: 'Categoria inválida.' });
+      data.categoria = cat;
+    }
+    if (faixaMinima !== undefined) data.faixaMinima = faixaMinima ? String(faixaMinima).toUpperCase().slice(0, 20) : null;
+    if (gratuita !== undefined) data.gratuita = !!gratuita;
+    if (secao !== undefined) data.secao = secao ? String(secao).slice(0, 60) : null;
+    if (ordem !== undefined) data.ordem = Number.isFinite(Number(ordem)) ? Number(ordem) : 0;
+    const atualizada = await prisma.aulaGravada.update({ where: { id: req.params.id }, data });
+    return res.json(atualizada);
+  } catch (e) {
+    return res.status(500).json({ error: 'Erro ao atualizar aula.' });
+  }
+};
+
+// Vitrine: nunca expõe embedUrl aqui. Aluno vê catálogo do PRÓPRIO professor (+ gratuitas dele); professor vê o próprio; admin vê tudo
 export const listarAulas = async (req, res) => {
   try {
-    const { categoria } = req.query;
+    const { categoria, professorId } = req.query;
+    const where = {};
+    if (categoria) where.categoria = String(categoria).toUpperCase();
+    if (req.user.role === 'ADMIN' && professorId) {
+      where.professorId = String(professorId);
+    } else if (req.user.role === 'PROFESSOR') {
+      where.professorId = req.user.id;
+    } else {
+      // Aluno: catálogo do próprio professor (organização dele) + nada global pago
+      const eu = await prisma.usuario.findUnique({ where: { id: req.user.id }, select: { professorId: true } });
+      if (!eu?.professorId) return res.json([]);
+      where.professorId = eu.professorId;
+    }
     const aulas = await prisma.aulaGravada.findMany({
-      where: categoria ? { categoria: String(categoria).toUpperCase() } : {},
-      select: { id: true, titulo: true, descricao: true, preco: true, categoria: true, faixaMinima: true, createdAt: true, professor: { select: { nome: true } } },
-      orderBy: { createdAt: 'desc' },
+      where,
+      select: { id: true, titulo: true, descricao: true, preco: true, categoria: true, faixaMinima: true, gratuita: true, secao: true, ordem: true, createdAt: true, professor: { select: { id: true, nome: true } } },
+      orderBy: [{ ordem: 'asc' }, { createdAt: 'desc' }],
     });
     return res.json(aulas);
   } catch (e) {
@@ -56,21 +103,53 @@ export const listarAulas = async (req, res) => {
   }
 };
 
-// Só o que o aluno liberou (com embed) — expira automaticamente
+// Só o que o aluno liberou (com embed) — expira automaticamente; inclui aulas de pacotes LIBERADOS
 export const minhasAulas = async (req, res) => {
   try {
+    const agora = new Date();
     await prisma.acessoAula.updateMany({
-      where: { alunoId: req.user.id, status: 'LIBERADO', expiresAt: { lt: new Date() } },
+      where: { alunoId: req.user.id, status: 'LIBERADO', expiresAt: { lt: agora } },
+      data: { status: 'REVOGADO' },
+    });
+    await prisma.acessoPacote.updateMany({
+      where: { alunoId: req.user.id, status: 'LIBERADO', expiresAt: { lt: agora } },
       data: { status: 'REVOGADO' },
     });
     const acessos = await prisma.acessoAula.findMany({
       where: { alunoId: req.user.id, status: 'LIBERADO' },
       include: { aula: true },
     });
-    const validos = acessos.filter((a) => !a.expiresAt || new Date(a.expiresAt) > new Date());
-    return res.json(validos);
+    const pacotes = await prisma.acessoPacote.findMany({
+      where: { alunoId: req.user.id, status: 'LIBERADO' },
+      include: { pacote: { include: { itens: { include: { aula: true }, orderBy: { ordem: 'asc' } } } } },
+    });
+    const validos = acessos.filter((a) => !a.expiresAt || new Date(a.expiresAt) > agora);
+    const viaPacote = [];
+    for (const ap of pacotes) {
+      if (ap.expiresAt && new Date(ap.expiresAt) <= agora) continue;
+      for (const item of ap.pacote.itens) {
+        viaPacote.push({ id: `pac-${ap.id}-${item.aula.id}`, alunoId: req.user.id, aulaId: item.aula.id, status: 'LIBERADO', expiresAt: ap.expiresAt, viaPacote: ap.pacote.titulo, aula: item.aula });
+      }
+    }
+    return res.json([...validos, ...viaPacote]);
   } catch (e) {
     return res.status(500).json({ error: 'Erro ao buscar acessos.' });
+  }
+};
+
+// Acessos PENDENTES de um professor (para ele liberar após confirmar PIX)
+export const acessosPendentes = async (req, res) => {
+  try {
+    const where = req.user.role === 'ADMIN' ? { status: 'PENDENTE' } : { status: 'PENDENTE', aula: { professorId: req.user.id } };
+    const acessos = await prisma.acessoAula.findMany({
+      where,
+      include: { aula: { select: { id: true, titulo: true, preco: true } }, aluno: { select: { id: true, nome: true, email: true, whatsapp: true } } },
+      orderBy: { createdAt: 'desc' },
+      take: 100,
+    });
+    return res.json(acessos);
+  } catch (e) {
+    return res.status(500).json({ error: 'Erro ao listar pendentes.' });
   }
 };
 
