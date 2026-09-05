@@ -1,13 +1,25 @@
-<!-- Tela: chat - Calixto OmniSystem -->
-<!DOCTYPE html>
-<html lang="pt-BR">
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8">
-  <title>chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="../css/nav.css">
 </head>
-<body class="bg-zinc-950 text-zinc-100">
-  <div id="app"></div>
-  <script src="chat.js"></script>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen p-4">
+  <div class="max-w-2xl mx-auto space-y-3">
+    <h1 class="text-xl font-bold text-emerald-500">Chat</h1>
+    <p class="text-xs text-zinc-500">Conversa salva neste dispositivo (offline-first). Em breve, sincronização no servidor.</p>
+    <select id="conversa" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-2 text-sm"></select>
+    <div id="mensagens" class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 space-y-2 min-h-[300px] max-h-[50vh] overflow-y-auto"></div>
+    <form id="form-msg" class="flex gap-2">
+      <input id="texto" placeholder="Digite sua mensagem..." maxlength="500" autocomplete="off" class="flex-1 bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-2.5 text-sm focus:outline-none focus:border-emerald-500">
+      <button class="bg-emerald-600 hover:bg-emerald-500 px-5 rounded-xl text-sm font-bold">Enviar</button>
+    </form>
+  </div>
+  <script type="module" src="chat.js"></script>
+  <script type="module">import{renderNav} from '../js/nav.js'; renderNav('CHAT');</script>
 </body>
 </html>

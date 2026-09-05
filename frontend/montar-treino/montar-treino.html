@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <title>OmniSystem - Montar Treino</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="montar-treino.css">
+  <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body class="bg-zinc-950 text-zinc-100 min-h-screen">
   <nav class="sticky top-0 z-30 bg-zinc-950/90 backdrop-blur border-b border-zinc-800">
@@ -67,5 +68,7 @@
   </div>
 
   <script type="module" src="montar-treino.js"></script>
+  <script type="module">import{renderNav} from '../js/nav.js'; renderNav('MONTAR TREINO');</script>
 </body>
 </html>
+

@@ -144,4 +144,96 @@ document.getElementById('form-editar').addEventListener('submit', async (e) => {
   }
 });
 
+// --- Dashboard global ADMIN: usuários, planos e prazo ---
+const ehAdmin = user && user.role === 'ADMIN';
+if (ehAdmin) {
+  document.getElementById('abas-admin')?.classList.remove('hidden');
+  document.getElementById('abas-admin')?.classList.add('flex');
+  document.getElementById('resumo-admin')?.classList.remove('hidden');
+  carregarResumo();
+  document.querySelectorAll('.aba-btn').forEach((b) => b.addEventListener('click', () => alternarAba(b.dataset.aba)));
+  document.getElementById('busca-usuario')?.addEventListener('input', carregarUsuarios);
+  document.getElementById('filtro-role')?.addEventListener('change', carregarUsuarios);
+  document.getElementById('filtro-status')?.addEventListener('change', carregarFaturas);
+  document.getElementById('btn-recarregar-faturas')?.addEventListener('click', carregarFaturas);
+  carregarUsuarios();
+  carregarFaturas();
+}
+
+function alternarAba(aba) {
+  document.getElementById('secao-usuarios')?.classList.toggle('hidden', aba !== 'usuarios');
+  document.getElementById('secao-faturas')?.classList.toggle('hidden', aba !== 'faturas');
+  document.querySelectorAll('.aba-btn').forEach((b) => {
+    const ativa = b.dataset.aba === aba;
+    b.className = `aba-btn px-3 py-1.5 rounded-lg text-xs ${ativa ? 'bg-emerald-600 text-white font-bold' : 'bg-zinc-800 text-zinc-400'}`;
+  });
+}
+
+async function carregarFaturas() {
+  const tbody = document.getElementById('tabela-faturas');
+  if (!tbody) return;
+  tbody.innerHTML = '<tr><td colspan="6" class="p-3 text-center text-zinc-500">Carregando...</td></tr>';
+  const status = document.getElementById('filtro-status')?.value || '';
+  const lista = await apiFetch(`/admin/faturas${status ? `?status=${status}` : ''}`).catch(() => []);
+  if (!lista.length) { tbody.innerHTML = '<tr><td colspan="6" class="p-3 text-center text-zinc-500">Nenhuma fatura.</td></tr>'; return; }
+  tbody.innerHTML = lista.map((f) => `
+    <tr class="border-t border-zinc-800 hover:bg-zinc-800/40">
+      <td class="p-2">${f.aluno?.nome || f.alunoId}<br><span class="text-zinc-500">${f.aluno?.email || ''}</span></td>
+      <td class="p-2">${f.plano} (R$ ${Number(f.valor).toFixed(2)})</td>
+      <td class="p-2 ${f.status === 'PAGO' ? 'text-emerald-400' : f.status === 'PENDENTE' ? 'text-yellow-400' : 'text-red-400'}">${f.status}</td>
+      <td class="p-2 text-zinc-400">${new Date(f.createdAt).toLocaleDateString('pt-BR')}</td>
+      <td class="p-2 text-zinc-400">${f.mercadoPagoId || '-'}</td>
+      <td class="p-2 flex gap-1">
+        <button data-id="${f.id}" data-status="PAGO" class="btn-fat bg-emerald-600 px-2 py-1 rounded">PAGO</button>
+        <button data-id="${f.id}" data-status="PENDENTE" class="btn-fat bg-yellow-600 px-2 py-1 rounded">PENDENTE</button>
+        <button data-id="${f.id}" data-status="CANCELADO" class="btn-fat bg-zinc-700 px-2 py-1 rounded">CANCELAR</button>
+      </td>
+    </tr>`).join('');
+  tbody.querySelectorAll('.btn-fat').forEach((btn) => btn.addEventListener('click', async () => {
+    const res = await apiFetch(`/admin/faturas/${btn.dataset.id}`, { method: 'PUT', body: JSON.stringify({ status: btn.dataset.status }) }).catch((e) => ({ error: e.message }));
+    showModal(res.error ? { titulo: 'Erro', mensagem: res.error, tipo: 'erro' } : { titulo: 'Salvo', mensagem: `Fatura marcada como ${btn.dataset.status}.`, tipo: 'sucesso' });
+    carregarFaturas();
+    carregarUsuarios();
+    carregarResumo();
+  }));
+}
+
+async function carregarResumo() {
+  try {
+    const r = await apiFetch('/admin/resumo');
+    document.getElementById('resumo-admin').innerHTML = `
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3"><p class="text-xs text-zinc-500">Alunos</p><p class="font-bold">${r.totalAlunos}</p></div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3"><p class="text-xs text-zinc-500">Professores</p><p class="font-bold">${r.totalProfessores}</p></div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3"><p class="text-xs text-zinc-500">Faturas pagas</p><p class="font-bold">${r.totalFaturasPagas}</p></div>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-3"><p class="text-xs text-zinc-500">Receita</p><p class="font-bold">R$ ${Number(r.receitaTotal || 0).toFixed(2)}</p></div>`;
+  } catch {}
+}
+
+async function carregarUsuarios() {
+  const tbody = document.getElementById('tabela-usuarios');
+  if (!tbody) return;
+  tbody.innerHTML = '<tr><td colspan="7" class="p-3 text-center text-zinc-500">Carregando...</td></tr>';
+  const q = document.getElementById('busca-usuario')?.value || '';
+  const role = document.getElementById('filtro-role')?.value || '';
+  const lista = await apiFetch(`/admin/usuarios?search=${encodeURIComponent(q)}${role ? `&role=${role}` : ''}`).catch(() => []);
+  if (!lista.length) { tbody.innerHTML = '<tr><td colspan="7" class="p-3 text-center text-zinc-500">Nenhum usuário.</td></tr>'; return; }
+  tbody.innerHTML = lista.map((u) => `
+    <tr class="border-t border-zinc-800 hover:bg-zinc-800/40">
+      <td class="p-2 font-medium">${u.nome}</td>
+      <td class="p-2 text-zinc-400">${u.email}</td>
+      <td class="p-2"><select data-id="${u.id}" class="sel-role bg-zinc-950 border border-zinc-800 rounded px-1 py-1">${['ALUNO', 'PROFESSOR', 'ADMIN'].map((r) => `<option ${u.role === r ? 'selected' : ''}>${r}</option>`).join('')}</select></td>
+      <td class="p-2 text-zinc-400">${u.professor?.nome || '-'}</td>
+      <td class="p-2">${u.planoAtual || '-'}</td>
+      <td class="p-2 ${u.diasRestantes < 0 ? 'text-red-400' : u.statusAssinatura === 'ATIVO' ? 'text-emerald-400' : 'text-yellow-400'}">${u.planoAtual ? `${u.diasRestantes}d (${u.statusAssinatura})` : '-'}</td>
+      <td class="p-2"><button data-id="${u.id}" class="btn-salvar-user bg-emerald-600 px-2 py-1 rounded">Salvar</button></td>
+    </tr>`).join('');
+  tbody.querySelectorAll('.btn-salvar-user').forEach((btn) => btn.addEventListener('click', async () => {
+    const id = btn.dataset.id;
+    const roleSel = tbody.querySelector(`.sel-role[data-id="${id}"]`)?.value;
+    const res = await apiFetch(`/admin/usuarios/${id}`, { method: 'PUT', body: JSON.stringify({ role: roleSel }) }).catch((e) => ({ error: e.message }));
+    showModal(res.error ? { titulo: 'Erro', mensagem: res.error, tipo: 'erro' } : { titulo: 'Salvo', mensagem: 'Perfil atualizado.', tipo: 'sucesso' });
+    carregarUsuarios();
+  }));
+}
+
 carregar();

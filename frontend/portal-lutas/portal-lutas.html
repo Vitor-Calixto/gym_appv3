@@ -1,5 +1,81 @@
-<!DOCTYPE html><html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Portal Lutas</title><script src="https://cdn.tailwindcss.com"></script></head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen p-6"><div class="max-w-3xl mx-auto space-y-4">
-  <h1 class="text-xl font-bold text-emerald-500">Portal de Lutas</h1>
-  <div id="grid-aulas" class="grid gap-4"></div>
-</div><script type="module" src="portal-lutas.js"></script></body></html>
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Lutas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/nav.css">
+  <style>
+    .video-wrap { position: relative; }
+    .watermark {
+      position: absolute; top: 8%; left: 5%;
+      font-size: 11px; color: rgba(255,255,255,.55);
+      background: rgba(0,0,0,.35); padding: 2px 8px; border-radius: 6px;
+      pointer-events: none; white-space: nowrap;
+      animation: marcaMove 14s ease-in-out infinite alternate;
+    }
+    @keyframes marcaMove {
+      0% { transform: translate(0,0); }
+      25% { transform: translate(60%, 120%); }
+      50% { transform: translate(10%, 260%); }
+      75% { transform: translate(70%, 80%); }
+      100% { transform: translate(0,0); }
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen pb-20">
+  <div class="max-w-3xl mx-auto p-4 space-y-4">
+    <h1 class="text-xl font-bold text-emerald-500">Portal de Lutas</h1>
+    <div id="grid-aulas" class="grid gap-4"></div>
+  </div>
+  <script type="module">
+    import { apiFetch } from '../js/storage.js';
+    import { obterUsuario } from '../js/auth.js';
+    import { showModal } from '../js/ui.js';
+    const user = obterUsuario();
+    if (!user) location.href = '../index/index.html';
+
+    const VIDEOS = ['_8u1rX4bksM', 'CTXLq50wU0Q'];
+    const grid = document.getElementById('grid-aulas');
+    let html = '<div class="grid gap-3">' + VIDEOS.map((id) => `<div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden"><iframe class="w-full h-48" src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe></div>`).join('') + '</div>';
+
+    const [aulas, minhas] = await Promise.all([
+      apiFetch('/aulas').catch(() => []),
+      apiFetch('/aulas/minhas').catch(() => []),
+    ]);
+    const liberadas = new Map((minhas || []).map((m) => [m.aulaId || m.aula?.id, m]));
+
+    html += (aulas || []).map((a) => {
+      const lib = liberadas.get(a.id);
+      const marca = `${user.nome} • ${user.email}`;
+      if (lib) {
+        const exp = lib.expiresAt ? new Date(lib.expiresAt).toLocaleDateString('pt-BR') : 'sem expiração';
+        return `<div class="bg-zinc-900 border border-emerald-600/40 rounded-xl overflow-hidden">
+          <div class="p-3"><h3 class="font-bold text-sm">${a.titulo}</h3><p class="text-xs text-emerald-400">LIBERADA até ${exp}</p></div>
+          <div class="video-wrap"><iframe class="w-full h-64" src="${lib.aula.embedUrl}" allowfullscreen></iframe><div class="watermark">${marca}</div></div>
+        </div>`;
+      }
+      return `<div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+        <h3 class="font-bold text-sm">${a.titulo}</h3>
+        <p class="text-xs text-zinc-500">${a.categoria}${a.faixaMinima ? ` • Faixa ${a.faixaMinima}+` : ''}</p>
+        <button data-id="${a.id}" class="btn-comprar mt-2 bg-emerald-600 px-3 py-1.5 rounded-lg text-xs font-bold">Comprar R$ ${Number(a.preco).toFixed(2)} - PIX</button>
+        <div id="aula-${a.id}" class="hidden mt-3"></div>
+      </div>`;
+    }).join('');
+    grid.innerHTML = html;
+
+    grid.querySelectorAll('.btn-comprar').forEach((btn) => btn.addEventListener('click', async () => {
+      const res = await apiFetch(`/aulas/${btn.dataset.id}/comprar`, { method: 'POST' }).catch((e) => ({ error: e.message }));
+      if (res?.error) { showModal({ titulo: 'Bloqueado', mensagem: res.error, tipo: 'erro' }); return; }
+      if (res?.jaLiberado) { location.reload(); return; }
+      if (res?.qrCode) {
+        const box = document.getElementById(`aula-${btn.dataset.id}`);
+        box.innerHTML = `<img src="data:image/png;base64,${res.qrCode}" class="w-48 mx-auto"><p class="text-xs text-center mt-2 break-all">${res.copiaCola}</p><p class="text-xs text-center text-yellow-400 mt-1">Aguardando compensação — libera automático.</p>`;
+        box.classList.remove('hidden');
+      }
+    }));
+  </script>
+  <script type="module">import{renderNav} from '../js/nav.js'; renderNav('PORTAL LUTAS');</script>
+</body>
+</html>

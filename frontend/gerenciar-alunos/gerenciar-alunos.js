@@ -24,5 +24,10 @@ async function carregar(){
     </div>
   `).join('');
 }
-document.getElementById('btn-convidar')?.addEventListener('click',()=>showPrompt({titulo:'Convidar aluno',placeholder:'E-mail',onConfirm:async(email)=>{ if(!email) return; const r=await apiFetch('/convites/convidar',{method:'POST',body:JSON.stringify({email})}); showModal({titulo:'Enviado',mensagem:`Convite para ${email}`,tipo:'sucesso'});}}));
+document.getElementById('btn-convidar').onclick=async()=>{
+  const r=await apiFetch('/convites/link',{method:'POST'});
+  await navigator.clipboard.writeText(r.link);
+  showModal({titulo:'Link copiado',mensagem:`${r.link} - envie ao aluno`,tipo:'sucesso'});
+};
+
 carregar();

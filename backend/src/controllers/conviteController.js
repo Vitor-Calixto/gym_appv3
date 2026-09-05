@@ -43,3 +43,10 @@ export const recusar = async (req, res) => {
     return res.json({ sucesso: true });
   } catch (e) { return res.status(500).json({ error: 'Erro.' }); }
 };
+
+export const gerarLink = async (req,res)=>{
+  const token=crypto.randomBytes(16).toString('hex');
+  const convite=await prisma.convite.create({data:{professorId:req.user.id, alunoEmail:'', token, expiresAt:new Date(Date.now()+30*24*60*60*1000)}});
+  const link=`http://localhost:5501/cadastro/cadastro.html?convite=${token}`;
+  return res.json({link, token});
+};

@@ -1,0 +1,9 @@
+/* frontend/css/nav.css */
+.nav-calixto{position:sticky;top:0;z-index:40;background:rgba(9,9,11,.9);backdrop-filter:blur(8px);border-bottom:1px solid #27272a}
+.nav-inner{max-width:80rem;margin:0 auto;padding:0 1rem;height:3.5rem;display:flex;align-items:center;justify-content:space-between}
+.nav-inner .logo{color:#10b981;font-weight:900}.nav-inner .logo span{color:#71717a;font-weight:400;font-size:.7rem;margin-left:.25rem}
+.nav-inner .links{display:flex;gap:.25rem;font-size:.75rem}
+.nav-inner .links a{padding:.4rem .75rem;border-radius:.5rem;color:#a1a1aa}
+.nav-inner .links a.ativo{background:#27272a;color:#fff}
+.nav-inner .user{font-size:.8rem;color:#a1a1aa;display:flex;gap:.5rem;align-items:center}
+.nav-inner .user button{background:rgba(239,68,68,.1);color:#f87171;border:1px solid rgba(239,68,68,.2);padding:.3rem .75rem;border-radius:.5rem}

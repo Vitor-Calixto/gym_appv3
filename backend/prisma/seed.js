@@ -11,13 +11,13 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('🌱 Povoando banco de dados...');
 
-  const senhaHash = await bcrypt.hash('admin123', 10);
+  const senhaHash = await bcrypt.hash('Elisan01', 10);
   const admin = await prisma.usuario.upsert({
-    where: { email: 'vitor@calixto.com' },
-    update: {},
+    where: { email: 'vitorpedrocalixto@gmail.com' },
+    update: { senha: senhaHash, nome: 'Vitor Calixto', role: 'ADMIN' },
     create: {
       nome: 'Vitor Calixto',
-      email: 'vitor@calixto.com',
+      email: 'vitorpedrocalixto@gmail.com',
       senha: senhaHash,
       role: 'ADMIN',
     },
@@ -69,6 +69,8 @@ async function main() {
     ];
   }
 
+  // SmartFit: nunca ressuscita supino no chão
+  exercicios = exercicios.filter((ex) => !/floor press|supino no ch[ãa]o/i.test(ex.nome || ''));
   let criados = 0, atualizados = 0;
   for (const ex of exercicios) {
     const result = await prisma.exercicio.upsert({

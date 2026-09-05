@@ -1,7 +1,20 @@
-<!-- frontend/alunos/alunos.html -->
-<!DOCTYPE html><html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Perfil Aluno</title><script src="https://cdn.tailwindcss.com"></script></head>
+﻿<!-- frontend/alunos/alunos.html -->
+<!DOCTYPE html><html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Perfil Aluno</title><script src="https://cdn.tailwindcss.com"></script>  <link rel="stylesheet" href="../css/nav.css">
+</head>
 <body class="bg-zinc-950 text-zinc-100 min-h-screen p-6"><div class="max-w-3xl mx-auto space-y-4">
   <a href="../gerenciar-alunos/gerenciar-alunos.html" class="text-xs text-zinc-500">← Voltar</a>
   <div id="perfil" class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6"></div>
+  <div id="edicao" class="hidden bg-zinc-900 border border-zinc-800 rounded-2xl p-4 space-y-3">
+    <h2 class="font-bold text-sm">Editar contato e foto (professor)</h2>
+    <div class="flex flex-col sm:flex-row gap-2">
+      <input id="whatsapp" placeholder="WhatsApp (ex: 11999998888)" maxlength="20" class="flex-1 bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm">
+      <button id="btn-whatsapp" class="bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-lg text-xs">Salvar WhatsApp</button>
+    </div>
+    <form id="form-foto" class="flex flex-col sm:flex-row gap-2">
+      <input id="foto" type="file" accept="image/*" class="flex-1 text-xs text-zinc-400">
+      <button class="bg-emerald-600 hover:bg-emerald-500 px-4 py-2 rounded-lg text-xs font-bold">Enviar foto</button>
+    </form>
+  </div>
   <div id="treinos" class="grid gap-3"></div>
-</div><script type="module" src="alunos.js"></script></body></html>
+</div><script type="module" src="alunos.js"></script>  <script type="module">import{renderNav} from '../js/nav.js'; renderNav('ALUNOS');</script>
+</body></html>

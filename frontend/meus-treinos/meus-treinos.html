@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,7 @@
   <title>OmniSystem - Biblioteca de Treinos</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="meus-treinos.css">
+  <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body class="bg-zinc-950 text-zinc-100 min-h-screen p-6 fade-in">
   <div class="max-w-4xl mx-auto space-y-6">
@@ -21,5 +22,6 @@
     <a href="../home/home.html" class="inline-block text-sm text-zinc-500 hover:text-emerald-400">&larr; Voltar</a>
   </div>
   <script type="module" src="meus-treinos.js"></script>
+  <script type="module">import{renderNav} from '../js/nav.js'; renderNav('MEUS TREINOS');</script>
 </body>
 </html>
